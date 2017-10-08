@@ -1,0 +1,16 @@
+:)
+1) Eğer linux kullanıyorsan bu dizinde 
+terminali açarak aşağıdaki komutu veriniz.
+	chmod +x toplu-calisma.sh
+
+2) Ardından programının derlenmiş halini 
+"a.out" adı ile bu dizine kopyala. Yani 
+adını değiştir :)
+
+3) Daha sonra terminalden aşağıdaki komutu 
+çalıştır.
+	./toplu-calistirma.sh
+
+4) Son olarak her örnek dizininin içerisine 
+girip benim programımın ile kendi programının 
+çıktı dosyalarını karşılaştırabilirsin.
