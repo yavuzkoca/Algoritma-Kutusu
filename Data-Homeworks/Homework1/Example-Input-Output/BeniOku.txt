@@ -1,6 +1,18 @@
 :)
-1) Eğer linux kullanıyorsan bu dizinde 
-terminali açarak aşağıdaki komutu veriniz.
+
+toplu-calistirma.sh betiği linux 
+kullanıcıları için örnekleri toplu 
+çalıştırma amacıyla yazılmıştır.
+
+Eğer linux kullanıyorsan bu dosya sizin için.
+Yok başka bir şey kullanıyorsanız, siz toplu 
+çalıştırma betiği yazana kadar ne yazık ki 
+tek tek çalıştırmanız gerekiyor.
+
+
+LINUX KULLANICILARI İÇİN
+1) Bu dizinde terminali açarak aşağıdaki 
+komutu veriniz.
 	chmod +x toplu-calisma.sh
 
 2) Ardından programının derlenmiş halini 
