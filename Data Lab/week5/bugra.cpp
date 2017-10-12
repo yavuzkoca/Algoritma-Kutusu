@@ -31,10 +31,10 @@ typedef struct LinkedList{
 	void create();
 	void add(const char *, const char *);
 	void remove(int);
-	void update(int);
+	void update(int, const char *, const char *);
 	void list();
 	Node search();	
-	void remove();
+	void clear();
 }LList;
 
 void LinkedList::create(){
@@ -93,6 +93,30 @@ void LinkedList::add(const char *name, const char *no){
 	}
 }
 
+void LinkedList::remove(int index){
+	Node *traverser = head;
+	Node *tail = head;
+	if(index == 0){
+		head = traverser->next;
+	}
+	else{
+		for(int i = 0; i < index; ++i){
+			tail = traverser;
+			traverser = traverser->next;
+		}
+		tail->next = traverser->next;
+	}
+	free(traverser->name);
+	free(traverser->no);
+	free(traverser);
+	--size;
+}
+
+void LinkedList::update(int index, const char *updated_name, const char *updated_no){
+	this->remove(index);
+	this->add(updated_name, updated_no);
+}
+
 void LinkedList::list(){
 	Node *traverser;
 	if(size != 0)
@@ -105,9 +129,10 @@ void LinkedList::list(){
 			size);
 		traverser = traverser->next;
 	}
+	printf("\n");
 }
 
-void LinkedList::remove(){
+void LinkedList::clear(){
 	Node *tail = head;
 	Node *traverser = head;
 	int init_size = size;
@@ -131,12 +156,17 @@ int main(){
 	liste.add("dilara", "21312");
 	liste.add("Ayilkin", "321234");
 	liste.add("Yavuz", "3242344");
+	liste.add("Tanay", "32344");
 	liste.add("Ali Tolga", "34352424");
 	liste.add("Oguz", "12332424");
 	liste.add("yemliha", "32421234");
 	liste.list();
 
-	liste.remove();
+	liste.update(0, "Tannnnay", "2231123");
+
+	liste.list();
+
+	liste.clear();
 
 	liste.list();
 
