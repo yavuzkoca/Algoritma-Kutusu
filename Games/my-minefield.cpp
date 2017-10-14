@@ -12,6 +12,7 @@ void place_mines(int number, char **field);
 void zero_fields(char **, char **);
 int click(int, int);
 void mines_say(int row, int col);
+int control(int);
 
 int main(int argc, char *argv[])
 {
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
 	zero_fields(emptyField, minesField);
 	place_mines(numberMines, minesField);
 
-//	print_field(minesField);
+	print_field(minesField);
 
 	int exit = 0;
 	int row, col;
@@ -37,6 +38,13 @@ int main(int argc, char *argv[])
 		cin >> row;
 		cin >> col;
 		exit = click(row,col);
+		if(control(numberMines) == 0)
+		{
+			cout << endl << "\nYOU ARE WINNER!" << endl;
+			print_field(minesField);
+			cout << endl << "\nYOU ARE WINNER!" << endl;
+			return EXIT_SUCCESS;
+		}
 	}
 	cout << "\tGAME OVER!" << endl;
 	print_field(emptyField);
@@ -94,7 +102,7 @@ void zero_fields(char **field1, char **field2){
 		for (int j = 0; j < SIZE; ++j)
 		{
 			field1[i][j]='-';
-			field2[i][j]='-';
+//			field2[i][j]='-';
 		}
 	}
 }
@@ -146,4 +154,18 @@ void mines_say(int row, int col){
 			}
 		}
 	}
+}
+
+int control(int numberMines){
+	
+	int say = 0;
+	for (int i = 0; i < SIZE; i++)
+	{
+		for (int j = 0; j < SIZE; j++)
+		{
+			if(emptyField[i][j]=='-')	say++;
+		}
+	}
+	
+	return (say-numberMines);
 }
