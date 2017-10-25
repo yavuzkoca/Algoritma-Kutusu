@@ -98,6 +98,7 @@ void List::printListBackward() {
     cout << endl;
 }
 
+
 bool List::deleteRecord(char input[]){
     curr = head;
     temp = head;
