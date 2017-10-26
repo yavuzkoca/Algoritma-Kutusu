@@ -109,6 +109,7 @@ float getValue(string postfix){
             s.pop();
             result = calculate(x, y, postfix[i]);
             s.push(itoa(result));
+            cout << result << endl;
         }else{
             s.push(postfix[i]);
         }
