@@ -76,7 +76,7 @@ int main(int argc, char *argv[]){
 	
 	//setlocale(LC_ALL, "");
 	//setlocale(LC_ALL, "C");
-	cout << setlocale(LC_ALL, "tr_TR.UTF-8") << endl;
+	setlocale(LC_ALL, "tr_TR.UTF-8");
 	//setlocale(LC_ALL, "Turkish");
 
 
