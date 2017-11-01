@@ -1,0 +1,29 @@
+Programın Çalışma Şekli
+
+Program ilk başlatıldığında terihlerinizi sorar. Bunlar "1 - İşlemin ardından konsol ekranı temizlensin mi?", "2 - Birden fazla ismi olan öğrenci var mı?" ve "3 - Türkçe karaktere sahip öğrenci var mı?". Ayarlarınızı istediğiniz şekilde yaptıktan ve ya varsayılan ayarlar ile birlikte devam edebilirsiniz.
+Program başladıktan sonra da "8) Set Preferences" ile tercihleri değiştirebilirsiniz. Fakat programın ortasında bunu yapmak (1 - clear_after_operations hariç) tavsiye edilmemektedir.
+
+
+Öncelikle "2) Insert All" ile istenen dosyadan öğrenci bilgileri alınır.
+Alınan bu bilgiler insertList türündeki listeye eklenir. 
+
+
+"1) Create" ile insertList içerisindeki kayıtlara göre surnameMap ve mailler oluşturulur.
+"1) Create" yapıldığında insertList listesi silinir. 
+
+
+Eğer yeni bir dosyadan kayıt almak istiyorsanız tekrar "2) Insert All" yapabilirsiniz.
+"1) create" yapmadan tekrar başka bir dosyadan veriler alınabilir. Sıkıntı oluşturmamaktadır.
+
+
+"3) Insert New Record" ve "6) Update" fonksiyonları da yeni ve ya güncellenmiş öğrenci bilgilerini insertList'e ekler. 
+"3) Insert New Record" ile kayıt eklerken <name> ile <surname> arasına <tab> koymalısınız. Aksi halde isimle soyisim farkını program anlayamaz.
+
+
+"7) Write to File" ile istediğiniz dosyaya ve ya ekrana bütün maillerin olduğu listeyi alfabetik olarak yazdırtabilirsiniz.
+
+
+"9) Print "insertList" and "fullMails With Surname" " ile geçici olarak kullanılan insertList listesini ve soyisim başlıkları altında mail listesini ekrana yazdırabilirsiniz.
+
+
+Programla işiniz bitince "0) Exit" ile sonlandırınız. Aksi halde listelerdeki kayıtlar serbest bırakılmaz.

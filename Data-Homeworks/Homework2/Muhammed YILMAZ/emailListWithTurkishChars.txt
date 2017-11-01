@@ -1,0 +1,120 @@
+cansu@itu.edu.tr	Ferdacan	Cansu
+cansui@itu.edu.tr	İrem Başak	Cansu
+cansum@itu.edu.tr	Mihrinaz	Cansu
+cansuo@itu.edu.tr	Ömer Faruk	Cansu
+ciddi@itu.edu.tr	Demircan	Ciddi
+ciddig@itu.edu.tr	Günan	Ciddi
+ciddil@itu.edu.tr	Lerzan	Ciddi
+ciddio@itu.edu.tr	Ömer Okan	Ciddi
+ciddip@itu.edu.tr	Paker	Ciddi
+ciddis@itu.edu.tr	Şahan	Ciddi
+ciddise@itu.edu.tr	Şerif Erkam	Ciddi
+ciddiz@itu.edu.tr	Zeynep Senahan	Ciddi
+ciddize@itu.edu.tr	Zeynep Tuba	Ciddi
+deliloglu@itu.edu.tr	Caner Hazar	Deliloğlu
+delilogluc@itu.edu.tr	Çağla	Deliloğlu
+deliloglun@itu.edu.tr	Nüvit	Deliloğlu
+deliloglus@itu.edu.tr	Sena Nur	Deliloğlu
+deliloglut@itu.edu.tr	Tunahan	Deliloğlu
+delilogluu@itu.edu.tr	Uzel	Deliloğlu
+delilogluy@itu.edu.tr	Yasemin	Deliloğlu
+dincturk@itu.edu.tr	Cem Ozan	Dinçtürk
+dincturkc@itu.edu.tr	Çeliker	Dinçtürk
+dincturkl@itu.edu.tr	Lütfiye Sena	Dinçtürk
+dincturkm@itu.edu.tr	Mehmet Gökalp	Dinçtürk
+dincturkr@itu.edu.tr	Ramazan Tarık	Dinçtürk
+dincturkt@itu.edu.tr	Talya	Dinçtürk
+egin@itu.edu.tr	Lawrence Tezoh	Egin
+egini@itu.edu.tr	İslam	Egin
+eginm@itu.edu.tr	Melih	Egin
+egino@itu.edu.tr	Önel	Egin
+egint@itu.edu.tr	Taylan Remzi	Egin
+esgin@itu.edu.tr	Bedriye Seray	Esgin
+esginb@itu.edu.tr	Behin	Esgin
+esginc@itu.edu.tr	Cankız	Esgin
+esgind@itu.edu.tr	Dilay Nur	Esgin
+esgino@itu.edu.tr	Osman Emre	Esgin
+esginy@itu.edu.tr	Yaşar Fatih Enes	Esgin
+fatin@itu.edu.tr	Mustafa Taha	Fatin
+fatinc@itu.edu.tr	Çağrı Atahan	Fatin
+fatinv@itu.edu.tr	Velit	Fatin
+findik@itu.edu.tr	Bedia	Fındık
+findikf@itu.edu.tr	Fethullah	Fındık
+findikh@itu.edu.tr	Halim	Fındık
+findiki@itu.edu.tr	İlma	Fındık
+findikk@itu.edu.tr	Kemal Tolga	Fındık
+findikku@itu.edu.tr	Kubat	Fındık
+findikn@itu.edu.tr	Nugaye	Fındık
+findiko@itu.edu.tr	Oğuzcan	Fındık
+ocar@itu.edu.tr	Doktora	Oçar
+ocarc@itu.edu.tr	Çağın	Oçar
+ocarp@itu.edu.tr	Perker	Oçar
+ocars@itu.edu.tr	Şensoy	Oçar
+orhan@itu.edu.tr	Alper	Orhan
+orhand@itu.edu.tr	Doğuşcan	Orhan
+orhani@itu.edu.tr	Işıltı	Orhan
+orhann@itu.edu.tr	Numan	Orhan
+serifoglu@itu.edu.tr	Ahmet Mehdi	Şerifoğlu
+serifoglub@itu.edu.tr	Buket	Şerifoğlu
+serifoglug@itu.edu.tr	Gülender	Şerifoğlu
+serifogluh@itu.edu.tr	Haluk Barış	Şerifoğlu
+serifogluhu@itu.edu.tr	Hulki	Şerifoğlu
+serifoglun@itu.edu.tr	Nüket	Şerifoğlu
+serifoglus@itu.edu.tr	Samet Emre	Şerifoğlu
+serifogluv@itu.edu.tr	Vahide	Şerifoğlu
+serifogluz@itu.edu.tr	Zülcenah	Şerifoğlu
+sevcan@itu.edu.tr	Fahir	Sevcan
+sevcanc@itu.edu.tr	Çağatay	Sevcan
+sevcani@itu.edu.tr	İsmail Enes	Sevcan
+sevcann@itu.edu.tr	Nurfer	Sevcan
+sevcans@itu.edu.tr	Şeniz	Sevcan
+sevkin@itu.edu.tr	Ayşe Aylin	Şevkin
+sevkine@itu.edu.tr	Eser	Şevkin
+sevking@itu.edu.tr	Gülten	Şevkin
+sevkinh@itu.edu.tr	Hatice Büşra	Şevkin
+sevkini@itu.edu.tr	İrfan Anıl	Şevkin
+sevkinl@itu.edu.tr	Latife	Şevkin
+sevkino@itu.edu.tr	Okbay	Şevkin
+sevkins@itu.edu.tr	Selcen	Şevkin
+sevkinse@itu.edu.tr	Şemsi Yiğit	Şevkin
+sevkint@itu.edu.tr	Tayyip	Şevkin
+seyfi@itu.edu.tr	Ahmet Polat	Seyfi
+seyfip@itu.edu.tr	Pertev	Seyfi
+tanrikulu@itu.edu.tr	Işınbıke	Tanrıkulu
+tanrikuluk@itu.edu.tr	Kubilay	Tanrıkulu
+tanrikulum@itu.edu.tr	Muhammed Üzeyir	Tanrıkulu
+tezmen@itu.edu.tr	Ceyhun Kadir	Tezmen
+tezmene@itu.edu.tr	Edis	Tezmen
+tezmenef@itu.edu.tr	Efecan	Tezmen
+tezmenh@itu.edu.tr	Hasan Burak	Tezmen
+tezmenj@itu.edu.tr	Jiyan	Tezmen
+tezmeno@itu.edu.tr	Öktem	Tezmen
+tezmenr@itu.edu.tr	Raif	Tezmen
+tezmens@itu.edu.tr	Sabiha Esra	Tezmen
+tezmense@itu.edu.tr	Seung Hun	Tezmen
+tezmenu@itu.edu.tr	Ümıt	Tezmen
+tezmeny@itu.edu.tr	Yasemin Erva	Tezmen
+yardimci@itu.edu.tr	Ahmet Furkan	Yardımcı
+yardimcib@itu.edu.tr	Bahar Özlem	Yardımcı
+yardimcif@itu.edu.tr	Feray	Yardımcı
+yardimcig@itu.edu.tr	Gül Sena	Yardımcı
+yardimcii@itu.edu.tr	Ilgaz	Yardımcı
+yardimcik@itu.edu.tr	Köker	Yardımcı
+yardimcir@itu.edu.tr	Rima	Yardımcı
+yardimciu@itu.edu.tr	Uluç Emre	Yardımcı
+yolcu@itu.edu.tr	Rana	Yolcu
+yolcuu@itu.edu.tr	Ülker	Yolcu
+yolcuum@itu.edu.tr	Ümran	Yolcu
+yolcuv@itu.edu.tr	Vedia	Yolcu
+zagli@itu.edu.tr	Ecem Hatice	Zağlı
+zaglik@itu.edu.tr	Kerime Hacer	Zağlı
+zaglio@itu.edu.tr	Ödül	Zağlı
+zaglit@itu.edu.tr	Tuğba	Zağlı
+zagliy@itu.edu.tr	Yaprak	Zağlı
+zagliye@itu.edu.tr	Yeliz	Zağlı
+zaptiye@itu.edu.tr	Esim	Zaptiye
+zaptiyeg@itu.edu.tr	Gülpınar	Zaptiye
+zaptiyeo@itu.edu.tr	Oktay Emir	Zaptiye
+zaptiyep@itu.edu.tr	Paksoy	Zaptiye
+zaptiyeu@itu.edu.tr	Ugur Can	Zaptiye
+zaptiyez@itu.edu.tr	Zeynep Ecehan	Zaptiye
