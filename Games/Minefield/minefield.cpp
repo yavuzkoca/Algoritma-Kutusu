@@ -15,7 +15,13 @@ void mines_say(int row, int col);
 int control(int);
 int putFlag (int row, int col);
 int doOperation();
-
+int countFoundBox(char **field, int row, int col, char found);
+int solve();
+void reverseBoxToFlag(int row, int col);
+int countFoundBoxFromField(char **field, char found);
+void winner();
+void loser();
+void finishGame();
 
 int main(int argc, char *argv[]) {
 	
@@ -34,19 +40,17 @@ int main(int argc, char *argv[]) {
 	int exit = 0;
 	while(!exit)
 	{
+		cout << endl << "Mines: " << numberMines << "\t\t\t";
+		cout << "Flag: " << countFoundBoxFromField(emptyField, '*') << endl;
 		print_field(emptyField);
 		exit = doOperation();
 		if(control(numberMines) == 0)
 		{
-			cout << endl << "\nYOU ARE WINNER!" << endl;
-			print_field(minesField);
-			cout << endl << "\nYOU ARE WINNER!" << endl;
+			winner();
 			return EXIT_SUCCESS;
 		}
 	}
-	cout << endl << endl <<	 "\t\tGAME OVER!" << endl;
-	print_field(emptyField);
-	cout << endl <<	 "\t\tGAME OVER!" << endl;
+	loser();
 	return EXIT_SUCCESS;
 }
 
@@ -101,67 +105,52 @@ void zero_fields(char **field1, char **field2){
 		for (int j = 0; j < SIZE; ++j)
 		{
 			field1[i][j]='-';
- //			field2[i][j]='-';
+			field2[i][j]=' ';
 		}
 	}
 }
 
 int openBox(int row, int col){
 
-	int say = 0;
+	/* Bayraklı ise açılmaz. */
+	if (emptyField[row][col] == '*') 
+	{
+	} 
 	/* Game Over */
-	if(minesField[row][col] == 'X')	{
-
-		for (int i = 0; i < SIZE; ++i)
-		{
-			for (int j = 0; j < SIZE; ++j)
-			{
-				if(minesField[i][j] == 'X')	emptyField[i][j]='X';
-			}
-		}
+	else if(minesField[row][col] == 'X')	
+	{
+		finishGame();
 		return 1;
-
-	} else if (emptyField[row][col] == '*') {
-
-		return 0;
-
-	} else if (emptyField[row][col] == '-') {
-
+	}
+	/* Kapalı kutu ise açılır. */
+	else if (emptyField[row][col] == '-') 
+	{
 		mines_say(row, col);
-		return 0;
+	} 
+	/* Sayı var ise ...*/
+	else if (isdigit(emptyField[row][col])) 
+	{
+		int say = countFoundBox(emptyField, row, col, '*');
 
-	} else if (isdigit(emptyField[row][col])) {
-
-		for (int i = -1; i < 2; ++i) {
-			
-			for (int j = -1; j < 2; ++j) {
-				
-				if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE){
-					
-					continue;
-				}
-				if(emptyField[row+i][col+j]== '*')	say++;
-			}
-		}
-
-		if(say == emptyField[row][col] - '0') {
-
-			for (int i = -1; i < 2; ++i) {
-
-				for (int j = -1; j < 2; ++j) {
-
-					if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE){
+		if(say == emptyField[row][col] - '0') 
+		{
+			for (int i = -1; i < 2; ++i) 
+			{
+				for (int j = -1; j < 2; ++j) 
+				{
+					if(row+i <0 || row+i >= SIZE || col+j <0 || col+j >= SIZE)
+					{
 						continue;
 					}
-					if(emptyField[row+i][col+j]!= '*') {
+					if(emptyField[row+i][col+j]!= '*') 
+					{
 						mines_say(row+i, col+j);
 					}
 				}
 			}
-			return 0;
 		}
-
 	}
+	return 0;
 }
 
 void mines_say(int row, int col){
@@ -169,16 +158,7 @@ void mines_say(int row, int col){
 	if(emptyField[row][col]==' ')	return;
 
 	int say = 0;
-	for (int i = -1; i < 2; ++i)
-	{
-		for (int j = -1; j < 2; ++j)
-		{
-			if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE){
-				continue;
-			}
-			if(minesField[row+i][col+j]== 'X')	say++;
-		}
-	}
+	say = countFoundBox(minesField, row, col, 'X');
 
 	if(say != 0)	emptyField[row][col] = '0' + say;
 	else
@@ -189,8 +169,8 @@ void mines_say(int row, int col){
 		{
 			for (int j = -1; j < 2; ++j)
 			{
-				if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE) {
-					
+				if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE) 
+				{
 					continue;
 				}	
 				mines_say(row+i, col+j);
@@ -201,16 +181,23 @@ void mines_say(int row, int col){
 
 int control(int numberMines){
 	
-	int say = 0;
+	int mines_say = 0;
 	for (int i = 0; i < SIZE; i++)
 	{
 		for (int j = 0; j < SIZE; j++)
 		{
-			if(emptyField[i][j]=='-')	say++;
+			if(emptyField[i][j] == '-' || emptyField[i][j] == '*')	
+			{
+				mines_say++;
+			}
 		}
 	}
 	
-	return (say-numberMines);
+	if(mines_say - numberMines == 0)
+	{
+		return 0;
+	}
+	return !0;
 }
 
 int putFlag (int row, int col){
@@ -233,18 +220,134 @@ int doOperation() {
 	cout << endl << "   Operation (O/P):" << endl
 		 << "       Open Box (O) / Put Flag (P)" << endl;
 	cout << "Enter \"Operation\", \"Row\" and \"Column\": ";
-	cin >> op >> row >> col;
+	cin >> op;
+	if(op == 'S' || op == 's')
+	{
+		return solve();
+	}
 
+	cin >> row >> col;
+
+	if(row >= SIZE || col >= SIZE || row < 0 || col < 0)
+	{
+
+		cout << "Please enter valid coordinate!" << endl;
+		return 0;
+	}
 	/* Put Flag */
-	if (op == 'P' || op == 'p')	{
-		
+	else if (op == 'P' || op == 'p')	
+	{
 		return putFlag(row, col);
-	} else if (op == 'O' || op == 'o') {
-		
+	}
+	else if (op == 'O' || op == 'o')
+	{
 		return openBox(row, col);
-	} else {
-		
+	}
+	else
+	{
 		cout << "Please enter valid operations!" << endl;
 		return 0;
+	}
+}
+
+int solve(){
+
+	int x = 0;
+	for (int row = 0; row < SIZE; ++row)
+	{
+		for (int col = 0; col < SIZE; ++col)
+		{
+			if(isdigit(emptyField[row][col]))
+			{
+				x = countFoundBox(emptyField, row, col, '-')
+				  + countFoundBox(emptyField, row, col, '*');
+				if (emptyField[row][col] - '0' == x)
+				{
+					reverseBoxToFlag(row, col);
+				}
+				if(emptyField[row][col] - '0' ==
+					 countFoundBox(emptyField, row, col, '*'))
+				{
+					openBox(row, col);
+				}
+			}
+		}
+	}
+	return 0;
+}
+
+int countFoundBox(char **field, int row, int col, char found) {
+
+	int say = 0;
+	for (int i = -1; i < 2; ++i)
+	{
+		for (int j = -1; j < 2; ++j)
+		{
+			if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE)
+			{
+				continue;
+			}
+			if(field[row+i][col+j] == found)	say++;
+		}
+	}
+	return say;
+}
+
+void reverseBoxToFlag(int row, int col) {
+
+	for (int i = -1; i < 2; ++i)
+	{
+		for (int j = -1; j < 2; ++j)
+		{
+			if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE)
+			{
+				continue;
+			}
+			if(emptyField[row+i][col+j] == '-')
+			{
+				emptyField[row+i][col+j] = '*';
+			}
+		}
+	}
+}	
+
+int countFoundBoxFromField(char **field, char found) {
+
+	int say = 0;
+	for (int row = 0; row < SIZE; ++row)
+	{
+		for (int col = 0; col < SIZE; ++col)
+		{
+			if (field[row][col] == found)
+			{	
+				say++;
+			}
+		}
+	}
+	return say;
+}
+
+void winner() {
+
+	finishGame();
+	cout << endl << "\n\t\tYOU ARE WINNER!" << endl;
+	print_field(emptyField);
+	cout << endl << "\n\t\tYOU ARE WINNER!" << endl;
+}
+
+void loser() {
+	cout << endl << endl <<	 "\t\tGAME OVER!" << endl;
+	print_field(emptyField);
+	cout << endl <<	 "\t\tGAME OVER!" << endl;
+}
+
+void finishGame() {
+
+	for (int i = 0; i < SIZE; ++i)
+	{
+		for (int j = 0; j < SIZE; ++j)
+		{
+			if(minesField[i][j] == 'X')	emptyField[i][j]='X';
+		}
 	}
 }
