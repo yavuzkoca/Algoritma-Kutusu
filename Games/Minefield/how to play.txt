@@ -1,0 +1,3 @@
+1) 20*20 mayın tarlasında kaç tane mayın olacağını seçiniz.
+2) <operation> <space/tab/newline> <row> <space/tab/newline> <column> formatında giriniz.
+3) Eğer otomatik çözüm isterseniz sadece (S/s) girmeniz yeterli. Aksi halde satır ve sütunları da girmeniz gerekmekte.
