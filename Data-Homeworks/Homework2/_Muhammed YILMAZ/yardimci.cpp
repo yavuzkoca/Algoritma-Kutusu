@@ -466,6 +466,7 @@ bool createPreferences(){
 	fprintf(dgPrefW, "\nturkish_characters\toff");
 
 	fclose(dgPrefW);
+	return EXIT_SUCCESS;
 }
 
 /* str'deki ch'leri siler. */

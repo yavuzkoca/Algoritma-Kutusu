@@ -128,6 +128,7 @@ bool createFullMails(){
 		}
 		iterSurname = iterSurname->next;
 	}while(iterSurname != headSurname);
+	return EXIT_SUCCESS;
 }
 
 /* fullMails listesini serbest bırakır. */
@@ -216,6 +217,7 @@ bool addToFullMails(studentInfo *tempAddInfo){
 			addInfoToFull->prev = yakalaFullMails;
 		}
 	}
+	return EXIT_SUCCESS;
 }
 
 /* Preferences ayarları için sonuçları hafızada tutar. */

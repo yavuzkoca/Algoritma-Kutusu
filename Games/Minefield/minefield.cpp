@@ -10,19 +10,21 @@ void create_fields();
 void print_field(char **field);
 void place_mines(int number, char **field);
 void zero_fields(char **, char **);
-int click(int, int);
+int openBox(int, int);
 void mines_say(int row, int col);
 int control(int);
+int putFlag (int row, int col);
+int doOperation();
 
-int main(int argc, char *argv[])
-{
+
+int main(int argc, char *argv[]) {
 	
 	create_fields();
 
 	int numberMines;
 	cout << "Enter a number of mines: ";
 	cin >> numberMines;
-	cout << "Number of mines: "<<numberMines<<endl;
+	cout << "Number of mines: " << numberMines << endl;
 
 	zero_fields(emptyField, minesField);
 	place_mines(numberMines, minesField);
@@ -30,14 +32,10 @@ int main(int argc, char *argv[])
 	print_field(minesField);
 
 	int exit = 0;
-	int row, col;
 	while(!exit)
 	{
 		print_field(emptyField);
-		cout << "Enter row and column: ";
-		cin >> row;
-		cin >> col;
-		exit = click(row,col);
+		exit = doOperation();
 		if(control(numberMines) == 0)
 		{
 			cout << endl << "\nYOU ARE WINNER!" << endl;
@@ -46,8 +44,9 @@ int main(int argc, char *argv[])
 			return EXIT_SUCCESS;
 		}
 	}
-	cout << "\tGAME OVER!" << endl;
+	cout << endl << endl <<	 "\t\tGAME OVER!" << endl;
 	print_field(emptyField);
+	cout << endl <<	 "\t\tGAME OVER!" << endl;
 	return EXIT_SUCCESS;
 }
 
@@ -102,15 +101,17 @@ void zero_fields(char **field1, char **field2){
 		for (int j = 0; j < SIZE; ++j)
 		{
 			field1[i][j]='-';
-//			field2[i][j]='-';
+ //			field2[i][j]='-';
 		}
 	}
 }
 
-int click(int row, int col){
+int openBox(int row, int col){
 
-	if(minesField[row][col] == 'X')	
-	{
+	int say = 0;
+	/* Game Over */
+	if(minesField[row][col] == 'X')	{
+
 		for (int i = 0; i < SIZE; ++i)
 		{
 			for (int j = 0; j < SIZE; ++j)
@@ -119,22 +120,62 @@ int click(int row, int col){
 			}
 		}
 		return 1;
-	}
 
-	mines_say(row, col);
-	
-	return 0;
+	} else if (emptyField[row][col] == '*') {
+
+		return 0;
+
+	} else if (emptyField[row][col] == '-') {
+
+		mines_say(row, col);
+		return 0;
+
+	} else if (isdigit(emptyField[row][col])) {
+
+		for (int i = -1; i < 2; ++i) {
+			
+			for (int j = -1; j < 2; ++j) {
+				
+				if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE){
+					
+					continue;
+				}
+				if(emptyField[row+i][col+j]== '*')	say++;
+			}
+		}
+
+		if(say == emptyField[row][col] - '0') {
+
+			for (int i = -1; i < 2; ++i) {
+
+				for (int j = -1; j < 2; ++j) {
+
+					if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE){
+						continue;
+					}
+					if(emptyField[row+i][col+j]!= '*') {
+						mines_say(row+i, col+j);
+					}
+				}
+			}
+			return 0;
+		}
+
+	}
 }
 
 void mines_say(int row, int col){
 
 	if(emptyField[row][col]==' ')	return;
+
 	int say = 0;
 	for (int i = -1; i < 2; ++i)
 	{
 		for (int j = -1; j < 2; ++j)
 		{
-			if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE)	continue;
+			if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE){
+				continue;
+			}
 			if(minesField[row+i][col+j]== 'X')	say++;
 		}
 	}
@@ -143,13 +184,15 @@ void mines_say(int row, int col){
 	else
 	{
 		emptyField[row][col] = ' ';
-		print_field(emptyField);
 
 		for (int i = -1; i < 2; ++i)
 		{
 			for (int j = -1; j < 2; ++j)
 			{
-				if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE)	continue;
+				if(row+i < 0 || row+i >= SIZE || col+j < 0 || col+j >= SIZE) {
+					
+					continue;
+				}	
 				mines_say(row+i, col+j);
 			}
 		}
@@ -168,4 +211,40 @@ int control(int numberMines){
 	}
 	
 	return (say-numberMines);
+}
+
+int putFlag (int row, int col){
+
+	if (emptyField[row][col] == '-') {
+
+		emptyField[row][col] = '*';
+	} else if (emptyField[row][col] == '*') {
+
+		emptyField[row][col] = '-';
+	}
+	return 0;
+}
+
+int doOperation() {
+
+	char op;
+	int row, col;
+
+	cout << endl << "   Operation (O/P):" << endl
+		 << "       Open Box (O) / Put Flag (P)" << endl;
+	cout << "Enter \"Operation\", \"Row\" and \"Column\": ";
+	cin >> op >> row >> col;
+
+	/* Put Flag */
+	if (op == 'P' || op == 'p')	{
+		
+		return putFlag(row, col);
+	} else if (op == 'O' || op == 'o') {
+		
+		return openBox(row, col);
+	} else {
+		
+		cout << "Please enter valid operations!" << endl;
+		return 0;
+	}
 }
