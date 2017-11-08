@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\PC\Data Structures\Deneme"
--- Configuring done
--- Generating done
--- Build files have been written to: D:/PC/Data Structures/Deneme/cmake-build-debug
