@@ -1,0 +1,151 @@
+#define RIGHT 1
+#define LEFT 2
+#define UP 3
+#define DOWN 4
+#define SIZE 25
+
+#include <iostream>
+#include <cstdlib>
+#include <cstring>
+
+using namespace std;
+
+typedef struct d{
+int x;
+int y;
+int right;
+int left;
+int down;
+int up;
+int camefrom;
+}StackDataType, position;
+
+struct Node{
+StackDataType data;
+Node *next;
+};
+
+struct Stack{
+       StackDataType element[SIZE];
+       int top;
+       void create();
+       void push(StackDataType);
+       StackDataType pop();
+       bool isempty();
+};
+
+
+char lab[15][22] = {
+		"#o###################",
+		"#     #      #    # #",
+		"# ### # ###### ## # #",
+		"# # #        # #  # #",
+		"# # ### ######## ## #",
+		"#     # # ##   #    #",
+		"### # # # ## # # ####",
+		"# # # # #    #      #",
+		"# # # # # ######### #",
+		"# # # # # #       # #",
+		"# # #   # # #####   #",
+		"# # ##### # #   #####",
+		"#         #   #     #",
+		"###################E#" };
+
+
+void printlab(char l[15][22]){
+	for (int i = 0; i < 14; i++) {
+		for (int j = 0; j < 21; j++)
+			cout << l[i][j];
+		cout << endl;
+	}
+	cout << endl << endl;
+}
+
+int main(){
+	Stack s;
+	s.create();
+	
+    int gi, gj, ci, cj; 
+    for (int i = 0; i < 14; i++) {
+        for (int j = 0; j < 21; j++){
+            if(lab[i][j]=='o'){gi=i; gj=j;}
+            if(lab[i][j]=='E'){ci=i; cj=j;}
+        }
+    }
+
+	position entrance = {gi,gj,0,0,0,0,0};
+	position exit = {ci,cj,0,0,0,0,0};
+	position p = entrance;
+	position decision;
+	p.camefrom = LEFT;
+	printlab(lab);
+	bool goback = false;
+	while (p.x != cj || p.y != ci) {
+		lab[p.y][p.x]='o';
+		printlab(lab);
+		
+		if (!goback) { 
+			p.right = 0; p.left = 0; p.down = 0; p.up = 0;
+            if (p.x<20 && lab[p.y][p.x+1]!='#') p.right=1;//right
+            if (p.x>0 && lab[p.y][p.x-1]!='#') p.left=1;//left
+            if (p.y<14 && lab[p.y+1][p.x]!='#') p.down=1;//down
+            if (p.y>0 && lab[p.y-1][p.x]!='#') p.up=1;//up
+		}
+		else goback = false;
+		
+		bool moved = true;
+		position past = p;
+		
+		if (p.down && p.camefrom != DOWN)
+			{p.y++; p.camefrom = UP; past.down = 0;}
+		else if (p.up && p.camefrom != UP)
+			{p.y--; p.camefrom = DOWN; past.up = 0;}
+		else if (p.left && p.camefrom != LEFT)
+			{p.x--; p.camefrom = RIGHT; past.left = 0;}
+		else if (p.right && p.camefrom != RIGHT)
+			{p.x++; p.camefrom = LEFT; past.right = 0;}
+		else moved = false;
+		
+		if (p.x != exit.x || p.y != exit.y) {
+			if ( (p.down + p.up + p.right + p.left) > 2) {
+				s.push(past);
+			}
+			if (!moved) { 
+				if ( !s.isempty() ) {
+				decision = s.pop();
+                     while(p.x!=decision.x || p.y!=decision.y){
+            		        lab[p.y][p.x]=' ';
+                            if (lab[p.y][p.x+1]=='o') p.x++;
+                            else if (lab[p.y][p.x-1]=='o') p.x--;
+                            else if (lab[p.y+1][p.x]=='o') p.y++;
+                            else if (lab[p.y-1][p.x]=='o') p.y--;
+                            printlab(lab);
+                            for(int i=0; i<30000000; i++){} //instead of sleep
+                     }
+                p = decision;
+				goback = true;
+				}
+			}
+		}
+        for(int i=0; i<30000000; i++){} //instead of sleep
+
+	}
+	lab[p.y][p.x] = 'o';
+	printlab(lab);
+	cout << "PATH found" << endl;
+return EXIT_SUCCESS;
+}
+
+
+void Stack::create(){
+     int top=0;
+}
+void Stack::push(StackDataType newelement){
+     element[top++] = newelement;
+}
+StackDataType Stack::pop(){
+              return element[--top];
+}
+bool Stack::isempty(){
+     return (top == 0);
+}
