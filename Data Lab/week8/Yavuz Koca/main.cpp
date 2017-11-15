@@ -137,7 +137,7 @@ int main(){
                     s2.pop();
                 }
                 if(!check)
-                    s.push(past);
+                    s.push(past); 
             }else{
                 cnt++;
             }
