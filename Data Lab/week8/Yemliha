@@ -80,7 +80,7 @@ int main(){
 	p.camefrom = LEFT;
 	printlab(lab);
 	bool goback = false;
-	while (p.x != exit.x || p.y != exit.y) {
+	while (p.x != cj || p.y != ci) {
 		lab[p.y][p.x]='o';
 		printlab(lab);
 		
@@ -128,9 +128,7 @@ int main(){
 			}
 		}
         for(int i=0; i<30000000; i++){} //instead of sleep
-	if(p.y == ci && p.x == cj){
-		break;
-	}
+
 	}
 	lab[p.y][p.x] = 'o';
 	printlab(lab);
