@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 
 #define ROW 14
 #define COL 21
@@ -115,7 +116,7 @@ int main(){
 	char Maze[ROW][COL+1] = {
 		"#o###################",
 		"#     #      #    # #",
-		"# ### # ###### ## # #",
+		"# ### # #### # ## # #",
 		"# # #        # #  # #",
 		"# # ### ######## ## #",
 		"#     # # ##   #    #",
@@ -130,17 +131,21 @@ int main(){
 
 	Stack s;
 	s.create();
+	Stack steps;
+	steps.create();
 
 	position entrance = find_entrance(Maze);
 	position exit = find_exit(Maze);
 	position current = entrance;
 	current.before_position = UP;
+	steps.push(current);
 	print_maze(Maze);
 
 	bool go_back = false;
 	while(current.x != exit.x || current.y != exit.y){
-		Maze[current.x][current.y] = '0';
+		Maze[current.x][current.y] = '*';
 		print_maze(Maze);
+		usleep(100000);
 
 		if(!go_back){
 			current.up = 0; current.right = 0; current.down = 0; current.left = 0;
@@ -166,9 +171,20 @@ int main(){
 
 		if(!moved){
 			if( !( s.isEmpty() ) ){
-				current = s.pop();
+				position desicion_point = s.pop();
+				while(current.x != desicion_point.x || current.y != desicion_point.y){
+					current = steps.pop();
+					Maze[current.x][current.y] = ' ';
+					print_maze(Maze);
+					usleep(100000);
+				}
+				current = desicion_point;
+				steps.push(current);
 				go_back = true;
 			}
+		}
+		else{
+			steps.push(current);
 		}
 
 	}
@@ -179,6 +195,7 @@ int main(){
 
 
 	s.close();
+	steps.close();
 
 	return 0;
 }
