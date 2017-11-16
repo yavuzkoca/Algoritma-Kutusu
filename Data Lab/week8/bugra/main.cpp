@@ -113,6 +113,26 @@ position find_exit(char maze[ROW][COL+1]){
 
 int main(){
 
+	
+
+	char Maze[ROW][COL+1] = {
+		"#o###################",
+		"#     #      #    # #",
+		"# # # # #### # ## # #",
+		"# # #        # #  # #",
+		"# # ### ## ##### ## #",
+		"#     # #  #   #    #",
+		"### # # # ## # # ####",
+		"# # # #      #      #",
+		"# # # # # #### ######",
+		"# # # # #           #",
+		"# # #   # # #####   #",
+		"# # ##### # #   #####",
+		"#         #   #     #",
+		"###################E#" };
+
+/*
+
 	char Maze[ROW][COL+1] = {
 		"#o###################",
 		"#     #      #    # #",
@@ -127,12 +147,17 @@ int main(){
 		"# # #   # # #####   #",
 		"# # ##### # #   #####",
 		"#         #   #     #",
-		"###################E#" };
+		"###################E#" };*/
+
+
+
 
 	Stack s;
 	s.create();
 	Stack steps;
 	steps.create();
+	Stack temp_steps;
+	temp_steps.create();
 
 	position entrance = find_entrance(Maze);
 	position exit = find_exit(Maze);
@@ -150,7 +175,7 @@ int main(){
 		if(!go_back){
 			current.up = 0; current.right = 0; current.down = 0; current.left = 0;
 			if(current.y > 0 && Maze[current.x][current.y-1] != '#') current.left = 1;
-			if(current.y < COL-2 && Maze[current.x][current.y+1] != '#') current.right = 1;
+			if(current.y < COL-1 && Maze[current.x][current.y+1] != '#') current.right = 1;
 			if(current.x > 0 && Maze[current.x-1][current.y] != '#') current.up = 1;
 			if(current.x < ROW-1 && Maze[current.x+1][current.y] != '#') current.down = 1;
 		}
@@ -165,8 +190,28 @@ int main(){
 		else moved = false;
 
 		if(current.x != exit.x || current.y != exit.y){
-			if(current.up + current.right + current.down + current.left > 2)
-				s.push(past);
+			if(current.up + current.right + current.down + current.left > 2){
+				bool flag = false;
+				position temp_current = steps.pop();
+				while(!steps.isEmpty()){
+					position temp = steps.pop();
+					temp_steps.push(temp);
+					if(temp.x == temp_current.x && temp.y == temp_current.y)
+						flag = true;
+				}
+				while(!temp_steps.isEmpty()){
+					steps.push(temp_steps.pop());
+				}
+				if(flag){
+					current = steps.pop();
+					Maze[current.x][current.y] = ' ';
+					moved = false;
+				}
+				else{
+					steps.push(temp_current);
+					s.push(past);
+				}
+			}
 		}
 
 		if(!moved){
