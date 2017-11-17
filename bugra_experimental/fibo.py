@@ -28,7 +28,7 @@ liste[1] = 1
 
 
 #liste = [math.log(elm) for elm in liste]
-liste = [elm ** 0.5 for elm in liste]
+liste = [math.log(elm) for elm in liste]
 
 xs = [np.cos(alpha) * liste[index] for index, alpha in enumerate(degrees)]
 ys = [np.sin(alpha)

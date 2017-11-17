@@ -113,8 +113,8 @@ position find_exit(char maze[ROW][COL+1]){
 
 int main(){
 
-	
-
+	int count = 0;
+/*
 	char Maze[ROW][COL+1] = {
 		"#o###################",
 		"#     #      #    # #",
@@ -129,14 +129,14 @@ int main(){
 		"# # #   # # #####   #",
 		"# # ##### # #   #####",
 		"#         #   #     #",
-		"###################E#" };
+		"###################E#" };*/
 
-/*
+
 
 	char Maze[ROW][COL+1] = {
 		"#o###################",
 		"#     #      #    # #",
-		"# ### # #### # ## # #",
+		"# ### # ###### ## # #",
 		"# # #        # #  # #",
 		"# # ### ######## ## #",
 		"#     # # ##   #    #",
@@ -147,7 +147,7 @@ int main(){
 		"# # #   # # #####   #",
 		"# # ##### # #   #####",
 		"#         #   #     #",
-		"###################E#" };*/
+		"###################E#" };
 
 
 
@@ -165,11 +165,13 @@ int main(){
 	current.before_position = UP;
 	steps.push(current);
 	print_maze(Maze);
+	++count;
 
 	bool go_back = false;
 	while(current.x != exit.x || current.y != exit.y){
 		Maze[current.x][current.y] = '*';
 		print_maze(Maze);
+		++count;
 		usleep(100000);
 
 		if(!go_back){
@@ -221,6 +223,7 @@ int main(){
 					current = steps.pop();
 					Maze[current.x][current.y] = ' ';
 					print_maze(Maze);
+					++count;
 					usleep(100000);
 				}
 				current = desicion_point;
@@ -238,9 +241,20 @@ int main(){
 	print_maze(Maze);
 	cout << "PATH found." << endl;
 
+	cout << count << endl;
+
+	while(!steps.isEmpty()){
+		temp_steps.push(steps.pop());
+	}
+
+	while(!temp_steps.isEmpty()){
+		position temp = temp_steps.pop();
+		cout << "[" << temp.x << "," << temp.y << "]" << endl;
+	}
 
 	s.close();
 	steps.close();
+	temp_steps.close();
 
 	return 0;
 }
