@@ -9,11 +9,11 @@ def fourier(x, repeat):
     return value
 
 series = [fourier(val, 1000) * (5 / 8) +
-          0.5 for val in np.arange(-10, 10, 0.1)]
+          0.5 for val in np.arange(-20, 20, 0.1)]
 
 axes = plt.gca()
 axes.set_ylim([-2, 2])
 
-plt.plot(np.arange(-10, 10, 0.1), series)
+plt.plot(np.arange(-20, 20, 0.1), series)
 
 plt.show()
