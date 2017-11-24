@@ -7,12 +7,60 @@
 
 using namespace std;
 
+int partition(vector<connection> &graph, int beg, int end){
+
+	mt19937 gen;
+	gen.seed(random_device()());
+	uniform_int_distribution<mt19937::result_type> dist(beg, end);
+
+	int pivot_index = dist(gen);
+	connection pivot = graph[pivot_index];
+
+	int lil, big;
+	connection temp;
+
+	graph[pivot_index] = graph[beg];
+	graph[beg] = pivot;
+
+	lil = beg + 1;
+	big = end;
+
+	while(lil != big){
+		if(graph[lil].A < pivot.A){
+			++lil;
+		}
+		else{
+			temp = graph[lil];
+			graph[lil] = graph[big];
+			graph[big] = temp;
+			--big;
+		}
+	}
+	if(graph[lil].A > pivot.A){
+		--big;
+		--lil;
+	}
+	graph[beg] = graph[lil];
+	graph[lil] = pivot;
+	return lil;
+}
+
+void qckSort(vector<connection> &graph, int beg, int end){
+	if(beg < end){
+		int pivot_index = partition(graph, beg, end);
+		qckSort(graph, beg, pivot_index - 1);
+		qckSort(graph, pivot_index + 1, end);
+	}
+}
+
 GraphCreator::GraphCreator(){
 	connection_prob = -1;
+	node_indices = NULL;
 	cout << "Successfully initialized the graph." << endl;
 }
 
 GraphCreator::GraphCreator(const GraphCreator &graph_in){
+	node_indices = NULL;
 	this->number_of_nodes = graph_in.number_of_nodes;
 	this->weighted = graph_in.weighted;
 	this->directed = graph_in.directed;
@@ -22,12 +70,37 @@ GraphCreator::GraphCreator(const GraphCreator &graph_in){
 }
 
 GraphCreator::GraphCreator(int number_of_nodes, double connection_prob, bool directed=false, bool weighted=false, int max_weight=-1){
+	node_indices = NULL;
 	this->number_of_nodes = number_of_nodes;
 	this->weighted = weighted;
 	this->directed = directed;
 	this->connection_prob = connection_prob;
 	this->max_weight = max_weight;
 	cout << "Successfully initialized the graph." << endl;
+}
+
+void GraphCreator::create_node_indices(){
+	if( graph.size() == 0){
+		cout << "ERROR(Creating node indices): The graph is empty. First you must fill it." << endl;
+		return;
+	}
+	node_indices = new int[number_of_nodes];
+	for(int i = 0; i < number_of_nodes; ++i) node_indices[i] = -1;
+	int node = -1;
+	for(int i = 0; i < graph.size(); ++i){
+		if( graph[i].A != node ){
+			node = graph[i].A;
+			node_indices[node] = i;
+		}
+	}
+}
+
+void GraphCreator::print_node_indices(){
+	if(node_indices == NULL){
+		cout << "ERROR(Printing node indices): To print them first you must create the node indices." << endl;
+		return;
+	}
+	for(int i = 0; i < number_of_nodes; ++i) cout << node_indices[i] << endl;
 }
 
 void GraphCreator::random_initialize(){
@@ -47,7 +120,7 @@ void GraphCreator::random_initialize(){
 			cout << "ERROR: You must set a max connection weight before weighted random initialization." << endl;
 			return;
 		}
-		for(int i = 1; i < number_of_nodes; ++i){
+		for(int i = 0; i < number_of_nodes; ++i){
 			for(int j = 0; j < number_of_nodes; ++j){
 				prob = dist_real(gen);
 				weight = dist_int(gen);
@@ -58,7 +131,7 @@ void GraphCreator::random_initialize(){
 		}
 	}
 	else if(directed && !weighted){
-		for(int i = 1; i < number_of_nodes; ++i){
+		for(int i = 0; i < number_of_nodes; ++i){
 			for(int j = 0; j < number_of_nodes; ++j){
 				prob = dist_real(gen);
 				connection road;
@@ -72,7 +145,7 @@ void GraphCreator::random_initialize(){
 			cout << "ERROR: You must set a max connection weight before weighted random initialization." << endl;
 			return;
 		}
-		for(int i = 1; i < number_of_nodes; ++i){
+		for(int i = 0; i < number_of_nodes; ++i){
 			for(int j = 0; j < i; ++j){
 				prob = dist_real(gen);
 				weight = dist_int(gen);
@@ -87,7 +160,7 @@ void GraphCreator::random_initialize(){
 		}
 	}
 	else{
-		for(int i = 1; i < number_of_nodes; ++i){
+		for(int i = 0; i < number_of_nodes; ++i){
 			for(int j = 0; j < i; ++j){
 				prob = dist_real(gen);
 				connection road;
@@ -100,6 +173,7 @@ void GraphCreator::random_initialize(){
 			}
 		}
 	}
+	qckSort(graph, 0, graph.size() - 1);
 }
 
 void GraphCreator::print_graph(){
@@ -165,4 +239,27 @@ void GraphCreator::load_graph(const char *PATH){
 	else{
 		cout << "ERROR: Couldn't open the file to load it. Graph is not loaded!" << endl;
 	}
+	qckSort(graph, 0, graph.size() - 1);
+}
+
+int GraphCreator::operator()(const int &i, const int &j){
+	if(node_indices[i] == -1) return 0;
+	if(i == number_of_nodes -1){
+		for(int k = node_indices[i]; k < graph.size(); ++k){
+			if( graph[k].B == j ) return weighted ? graph[k].weight : 1;
+		}
+		return 0;
+	}
+	int end = i + 1;
+	while(node_indices[end] == -1){
+		++end;
+	}
+	for(int k = node_indices[i]; k < node_indices[end]; ++k){
+		if( graph[k].B == j ) return weighted ? graph[k].weight : 1;
+	}
+	return 0;
+}
+
+GraphCreator::~GraphCreator(){
+	if(node_indices != NULL) delete[] node_indices;
 }
