@@ -80,10 +80,7 @@ GraphCreator::GraphCreator(int number_of_nodes, double connection_prob, bool dir
 }
 
 void GraphCreator::create_node_indices(){
-	if( graph.size() == 0){
-		cout << "ERROR(Creating node indices): The graph is empty. First you must fill it." << endl;
-		return;
-	}
+	if(node_indices != NULL) delete[] node_indices;
 	node_indices = new int[number_of_nodes];
 	for(int i = 0; i < number_of_nodes; ++i) node_indices[i] = -1;
 	int node = -1;
@@ -176,6 +173,191 @@ void GraphCreator::random_initialize(){
 	qckSort(graph, 0, graph.size() - 1);
 }
 
+void GraphCreator::add_connection(const int &A, const int &B){
+	if(A == B){
+		cout << "ERROR(Adding connection): You cannot connect a node to itself." << endl;
+		return;
+	}
+	if(node_indices[A] == -1){
+		connection new_connection;
+		new_connection.A = A; new_connection.B = B;
+		graph.push_back(new_connection);
+		if(directed){
+			new_connection.A = B; new_connection.B = A;
+			graph.push_back(new_connection);
+		}
+	}
+	if(A == number_of_nodes -1){
+		bool exists = false;
+		for(int k = node_indices[A]; k < graph.size(); ++k){
+			if( graph[k].B == B ){
+				exists = true;
+				break;
+			}
+		}
+		if(!exists){
+			connection new_connection;
+			new_connection.A = A; new_connection.B = B;
+			graph.push_back(new_connection);
+			if(directed){
+				new_connection.A = B; new_connection.B = A;
+				graph.push_back(new_connection);
+			}
+		}
+	}
+	else{
+		int end = A + 1;
+		while(node_indices[end] == -1){
+			++end;
+		}
+		bool exists = false;
+		for(int k = node_indices[A]; k < node_indices[end]; ++k){
+			if( graph[k].B == B ){
+				exists = true;
+				break;
+			}
+		}
+		if(!exists){
+			connection new_connection;
+			new_connection.A = A; new_connection.B = B;
+			graph.push_back(new_connection);
+			if(directed){
+				new_connection.A = B; new_connection.B = A;
+				graph.push_back(new_connection);
+			}
+		}
+	}
+	qckSort(graph, 0, graph.size() - 1);
+	create_node_indices();
+}
+
+void GraphCreator::add_connection(const int &A, const int &B, const int &weight){
+	if(A == B){
+		cout << "ERROR(Adding connection): You cannot connect a node to itself." << endl;
+		return;
+	}
+	if(node_indices[A] == -1){
+		connection new_connection;
+		new_connection.A = A; new_connection.B = B; new_connection.weight = weight;
+		graph.push_back(new_connection);
+		if(directed){
+			new_connection.A = B; new_connection.B = A;
+			graph.push_back(new_connection);
+		}
+	}
+	if(A == number_of_nodes -1){
+		bool exists = false;
+		for(int k = node_indices[A]; k < graph.size(); ++k){
+			if( graph[k].B == B ){
+				graph[k].weight = weight;
+				exists = true;
+				break;
+			}
+		}
+		if(!exists){
+			connection new_connection;
+			new_connection.A = A; new_connection.B = B; new_connection.weight = weight;
+			graph.push_back(new_connection);
+			if(directed){
+				new_connection.A = B; new_connection.B = A;
+				graph.push_back(new_connection);
+			}
+		}
+	}
+	else{
+		int end = A + 1;
+		while(node_indices[end] == -1){
+			++end;
+		}
+		bool exists = false;
+		for(int k = node_indices[A]; k < node_indices[end]; ++k){
+			if( graph[k].B == B ){
+				graph[k].weight = weight;
+				exists = true;
+				break;
+			}
+		}
+		if(!exists){
+			connection new_connection;
+			new_connection.A = A; new_connection.B = B; new_connection.weight = weight;
+			graph.push_back(new_connection);
+			if(directed){
+				new_connection.A = B; new_connection.B = A;
+				graph.push_back(new_connection);
+			}
+		}
+	}
+	qckSort(graph, 0, graph.size() - 1);
+	create_node_indices();
+}
+
+bool GraphCreator::remove_connection_pseudo(const int &A, const int &B){ // TODO: MIRROR ERASE BOTH WAYS
+	if(node_indices[A] == -1) return false; // There is no connection from A node
+	bool erased = false; int k=-2;
+	if(A == number_of_nodes - 1){ // If A is the last node
+		for(k = node_indices[A]; k < graph.size(); ++k){ // Start from the start of from A connections go until the end
+			if( graph[k].B == B ){ // If found a connection from A to B
+				graph[k].weight = 0; erased = true; break; // Delete the connection also set erased flag to true
+			}
+		}
+		if(!erased) return false;
+		// If not erased return because you already looked for every node possible and couldn't find a match
+	}
+
+	if(!erased){ // If not erased look for the end of the from A connections
+		int end = A + 1; // Start from the next node
+		while(node_indices[end++] == -1); // While that node does not exist look for the next from node connections
+		--end;
+		for(k = node_indices[A]; k < node_indices[end]; ++k){ // Start from the begining of from A connections to their end
+			if( graph[k].B == B ){ // If total match
+				graph[k].weight = 0; erased = true; break; // Remove the connection
+			}
+		}
+		if(!erased) return false; // If couldn't find a connection then no match found
+	}
+	if(graph[node_indices[A]].A != A){ // If the is no from A connections left then set the node index to -1
+		node_indices[A] = -1;
+	}
+	for(int k = A + 1; k < number_of_nodes; ++k){ // For all nodes after the removed shift the indices
+		if(node_indices[k] != -1) --node_indices[k];
+	}
+	return true; // Removed
+}
+
+
+bool GraphCreator::remove_connection_real(const int &A, const int &B){ // TODO: MIRROR ERASE BOTH WAYS
+	if(node_indices[A] == -1) return false; // There is no connection from A node
+	bool erased = false; int k=-2;
+	if(A == number_of_nodes - 1){ // If A is the last node
+		for(k = node_indices[A]; k < graph.size(); ++k){ // Start from the start of from A connections go until the end
+			if( graph[k].B == B ){ // If found a connection from A to B
+				graph.erase(graph.begin() + k); erased = true; break; // Delete the connection also set erased flag to true
+			}
+		}
+		if(!erased) return false;
+		// If not erased return because you already looked for every node possible and couldn't find a match
+	}
+
+	if(!erased){ // If not erased look for the end of the from A connections
+		int end = A + 1; // Start from the next node
+		while(node_indices[end++] == -1); // While that node does not exist look for the next from node connections
+		--end;
+		for(k = node_indices[A]; k < node_indices[end]; ++k){ // Start from the begining of from A connections to their end
+			if( graph[k].B == B ){ // If total match
+				graph.erase(graph.begin() + k); erased = true; break; // Remove the connection
+			}
+		}
+		if(!erased) return false; // If couldn't find a connection then no match found
+	}
+	if(graph[node_indices[A]].A != A){ // If the is no from A connections left then set the node index to -1
+		node_indices[A] = -1;
+	}
+	for(int k = A + 1; k < number_of_nodes; ++k){ // For all nodes after the removed shift the indices
+		if(node_indices[k] != -1) --node_indices[k];
+	}
+	return true; // Removed
+}
+
 void GraphCreator::print_graph(){
 	if(graph.size() == 0) cout << "The graph is empty." << endl;
 	else{
@@ -240,6 +422,17 @@ void GraphCreator::load_graph(const char *PATH){
 		cout << "ERROR: Couldn't open the file to load it. Graph is not loaded!" << endl;
 	}
 	qckSort(graph, 0, graph.size() - 1);
+}
+
+void GraphCreator::print_graph_as_matrix(){
+	for(int i = 0; i < number_of_nodes; ++i){
+		cout << this->operator()(i, 0);
+		for(int j = 1; j < number_of_nodes; ++j){
+			cout << "\t" << this->operator()(i, j);
+		}
+		cout << endl;
+	}
+	cout << endl;
 }
 
 int GraphCreator::operator()(const int &i, const int &j){

@@ -184,7 +184,7 @@ void solve_maze_recurse(cell maze[][MAZESIZE],
 	if(current->x != exit->x || current->y != exit->y){
 		maze[current->x][current->y].val = 'o';
 		print_maze(maze);
-		usleep(10000);
+		usleep(50000);
 
 		if(!(*go_back)){
 			current->up = 0; current->right = 0; current->down = 0; current->left = 0;
@@ -235,7 +235,7 @@ void solve_maze_recurse(cell maze[][MAZESIZE],
 					*current = steps->pop();
 					maze[current->x][current->y].val = ' ';
 					print_maze(maze);
-					usleep(10000);
+					usleep(50000);
 				}
 				*current = decision_point;
 				steps->push(*current);
