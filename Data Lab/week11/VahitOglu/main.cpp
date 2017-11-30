@@ -5,7 +5,7 @@
 
 #include "cell.h"
 
-#define MAZESIZE 10
+#define MAZESIZE 30
 
 #define UP 1
 #define RIGHT 2
@@ -183,8 +183,8 @@ void solve_maze_recurse(cell maze[][MAZESIZE],
 						bool *go_back){
 	if(current->x != exit->x || current->y != exit->y){
 		maze[current->x][current->y].val = 'o';
-		print_maze(maze);
-		usleep(50000);
+		//print_maze(maze);
+		//usleep(10000);
 
 		if(!(*go_back)){
 			current->up = 0; current->right = 0; current->down = 0; current->left = 0;
@@ -234,8 +234,8 @@ void solve_maze_recurse(cell maze[][MAZESIZE],
 				while(current->x != decision_point.x || current->y != decision_point.y){
 					*current = steps->pop();
 					maze[current->x][current->y].val = ' ';
-					print_maze(maze);
-					usleep(50000);
+					//print_maze(maze);
+					//usleep(10000);
 				}
 				*current = decision_point;
 				steps->push(*current);
