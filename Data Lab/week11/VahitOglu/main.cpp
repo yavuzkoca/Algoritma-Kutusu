@@ -81,7 +81,7 @@ void print_maze(cell maze[][MAZESIZE]){
 	for(int i = 0; i < MAZESIZE; ++i){
 		for(int j = 0; j < MAZESIZE; ++j){
 			if(maze[i][j].up)
-				cout << " -";
+				cout << " _";
 			else
 				cout << "  ";
 		}
@@ -97,7 +97,7 @@ void print_maze(cell maze[][MAZESIZE]){
 	}
 	for(int i = 0; i < MAZESIZE; ++i){
 		if(maze[MAZESIZE - 1][i].down)
-			cout << " -";
+			cout << " _";
 	}
 	cout << endl;
 }
@@ -110,28 +110,46 @@ void create_maze(cell maze[][MAZESIZE], coordinate current, Stack<coordinate> *c
 
 	if(*visited_count != MAZESIZE * MAZESIZE){
 
-		vector<coordinate> currents_unvisited_neighbours;
+		coordinate currents_unvisited_neighbours[4];
 
-		if(current.i != 0 && !maze[current.i - 1][current.j].visited){
-			coordinate up; up.i = current.i - 1; up.j = current.j;
-			currents_unvisited_neighbours.push_back(up);
+		int size = 0;
+
+		if(current.i != 0 && !maze[current.i - 1][current.j].visited){ // up
+			currents_unvisited_neighbours[0].i = current.i - 1; currents_unvisited_neighbours[0].j = current.j;
+			size++;
 		}
-		if(current.i != MAZESIZE - 1 && !maze[current.i + 1][current.j].visited){
-			coordinate down; down.i = current.i + 1; down.j = current.j;
-			currents_unvisited_neighbours.push_back(down);
+		else currents_unvisited_neighbours[0].i = -1;
+		if(current.i != MAZESIZE - 1 && !maze[current.i + 1][current.j].visited){ // down
+			currents_unvisited_neighbours[1].i = current.i + 1; currents_unvisited_neighbours[1].j = current.j;
+			size++;
 		}
+		else currents_unvisited_neighbours[1].i = -1; // left
 		if(current.j != 0 && !maze[current.i][current.j - 1].visited){
-			coordinate left; left.i = current.i; left.j = current.j - 1;
-			currents_unvisited_neighbours.push_back(left);
+			currents_unvisited_neighbours[2].i = current.i; currents_unvisited_neighbours[2].j = current.j - 1;
+			size++;
 		}
+		else currents_unvisited_neighbours[2].i = -1; // right
 		if(current.j != MAZESIZE - 1 && !maze[current.i][current.j + 1].visited){
-			coordinate right; right.i = current.i; right.j = current.j + 1;
-			currents_unvisited_neighbours.push_back(right);
-		} // Decide the unvisited neighbours and push them into a vector
+			currents_unvisited_neighbours[3].i = current.i; currents_unvisited_neighbours[3].j = current.j + 1;
+			size++;
+		}
+		else currents_unvisited_neighbours[3].i = -1;
+		// Decide the unvisited neighbours and push them into a vector
+
+		if(size != 0){
+
+			int decision;
+			int random_decision = dist(gen) % size;
+			int count = 0;
+
+			for(int i = 0; i < 4; ++i){
+				if(currents_unvisited_neighbours[i].i == -1) continue;
+				if(count == random_decision) decision = i;
+				++count;
+			}
 
 
-		if(currents_unvisited_neighbours.size() != 0){
-			coordinate random = currents_unvisited_neighbours[dist(gen) % currents_unvisited_neighbours.size()];
+			coordinate random = currents_unvisited_neighbours[decision];
 			cells->push(current);
 			int vertical = random.i - current.i, horizontal = random.j - current.j;
 
@@ -157,26 +175,77 @@ void create_maze(cell maze[][MAZESIZE], coordinate current, Stack<coordinate> *c
 }
 
 void solve_maze_recurse(cell maze[][MAZESIZE],
-						coordinate *current,
-						coordinate *exit,
+						position *current,
+						position *exit,
 						Stack<position> *s,
 						Stack<position> *steps,
 						Stack<position> *temp_steps,
 						bool *go_back){
-	if(current.x != exit.x || current.y != exit.y){
-		maze[current.x][current.y] = '*';
+	if(current->x != exit->x || current->y != exit->y){
+		maze[current->x][current->y].val = 'o';
 		print_maze(maze);
-		usleep(100000);
+		usleep(10000);
 
 		if(!(*go_back)){
-			current.up = 0; current.right = 0; current.down = 0; current.left = 0;
-			if(current.y > 0 && Maze[current.x][current.y-1] != '#') current.left = 1;
-			if(current.y < COL-1 && Maze[current.x][current.y+1] != '#') current.right = 1;
-			if(current.x > 0 && Maze[current.x-1][current.y] != '#') current.up = 1;
-			if(current.x < ROW-1 && Maze[current.x+1][current.y] != '#') current.down = 1;
+			current->up = 0; current->right = 0; current->down = 0; current->left = 0;
+			if(!maze[current->x][current->y].left) current->left = 1;
+			if(!maze[current->x][current->y].right) current->right = 1;
+			if(!maze[current->x][current->y].up) current->up = 1;
+			if(!maze[current->x][current->y].down) current->down = 1;
 		}
 		else *go_back = false;
 
+		bool moved = true;
+		position past = *current;
+		if(current->up && current->before_position != UP){ current->x--; current->before_position = DOWN; past.up = 0; }
+		else if(current->right && current->before_position != RIGHT){ current->y++; current->before_position = LEFT; past.right = 0; }
+		else if(current->down && current->before_position != DOWN){ current->x++; current->before_position = UP; past.down = 0; }
+		else if(current->left && current->before_position != LEFT){ current->y--; current->before_position = RIGHT; past.left = 0; }
+		else moved = false;
+
+		if(current->x != exit->x || current->y != exit->y){
+			if(current->up + current->right + current->down + current->left >= 2){
+				bool flag = false;
+				position temp_current = steps->pop();
+				while(!steps->isEmpty()){
+					position temp = steps->pop();
+					temp_steps->push(temp);
+					if(temp.x == temp_current.x && temp.y == temp_current.y)
+						flag = true;
+				}
+				while(!temp_steps->isEmpty()){
+					steps->push(temp_steps->pop());
+				}
+				if(flag){
+					*current = steps->pop();
+					maze[current->x][current->y].val = ' ';
+					moved = false;
+				}
+				else{
+					steps->push(temp_current);
+					s->push(past);
+				}
+			}
+		}
+
+		if(!moved){
+			if( !( s->isEmpty() ) ){
+				position decision_point = s->pop();
+				while(current->x != decision_point.x || current->y != decision_point.y){
+					*current = steps->pop();
+					maze[current->x][current->y].val = ' ';
+					print_maze(maze);
+					usleep(10000);
+				}
+				*current = decision_point;
+				steps->push(*current);
+				*go_back = true;
+			}
+		}
+		else{
+			steps->push(*current);
+		}
+		solve_maze_recurse(maze, current, exit, s, steps, temp_steps, go_back);
 	}
 }
 
@@ -201,86 +270,14 @@ void solve_maze(cell maze[][MAZESIZE]){
 	current.before_position = UP;
 	steps.push(current);
 	print_maze(maze);
-	++count;
 
 	bool go_back = false;
 
+	solve_maze_recurse(maze, &current, &exit, &s, &steps, &temp_steps, &go_back);
 
-
-	while(current.x != exit.x || current.y != exit.y){
-		Maze[current.x][current.y] = '*';
-		print_maze(Maze);
-		++count;
-		usleep(100000);
-
-		if(!go_back){
-			current.up = 0; current.right = 0; current.down = 0; current.left = 0;
-			if(current.y > 0 && Maze[current.x][current.y-1] != '#') current.left = 1;
-			if(current.y < COL-1 && Maze[current.x][current.y+1] != '#') current.right = 1;
-			if(current.x > 0 && Maze[current.x-1][current.y] != '#') current.up = 1;
-			if(current.x < ROW-1 && Maze[current.x+1][current.y] != '#') current.down = 1;
-		}
-		else go_back = false;
-
-		bool moved = true;
-		position past = current;
-		if(current.up && current.before_position != UP){ current.x--; current.before_position = DOWN; past.up = 0; }
-		else if(current.right && current.before_position != RIGHT){ current.y++; current.before_position = LEFT; past.right = 0; }
-		else if(current.down && current.before_position != DOWN){ current.x++; current.before_position = UP; past.down = 0; }
-		else if(current.left && current.before_position != LEFT){ current.y--; current.before_position = RIGHT; past.left = 0; }
-		else moved = false;
-
-		if(current.x != exit.x || current.y != exit.y){
-			if(current.up + current.right + current.down + current.left > 2){
-				bool flag = false;
-				position temp_current = steps.pop();
-				while(!steps.isEmpty()){
-					position temp = steps.pop();
-					temp_steps.push(temp);
-					if(temp.x == temp_current.x && temp.y == temp_current.y)
-						flag = true;
-				}
-				while(!temp_steps.isEmpty()){
-					steps.push(temp_steps.pop());
-				}
-				if(flag){
-					current = steps.pop();
-					Maze[current.x][current.y] = ' ';
-					moved = false;
-				}
-				else{
-					steps.push(temp_current);
-					s.push(past);
-				}
-			}
-		}
-
-		if(!moved){
-			if( !( s.isEmpty() ) ){
-				position desicion_point = s.pop();
-				while(current.x != desicion_point.x || current.y != desicion_point.y){
-					current = steps.pop();
-					Maze[current.x][current.y] = ' ';
-					print_maze(Maze);
-					++count;
-					usleep(100000);
-				}
-				current = desicion_point;
-				steps.push(current);
-				go_back = true;
-			}
-		}
-		else{
-			steps.push(current);
-		}
-
-	}
-
-	Maze[current.x][current.y] = 'X';
-	print_maze(Maze);
+	maze[current.x][current.y].val = 'X';
+	print_maze(maze);
 	cout << "PATH found." << endl;
-
-	cout << count << endl;
 
 	while(!steps.isEmpty()){
 		temp_steps.push(steps.pop());
@@ -308,7 +305,7 @@ int main(){
 	create_maze(maze, current, &cells, &visited_count);
 	print_maze(maze);
 
-
+	solve_maze(maze);
 
 	return EXIT_SUCCESS;
 }
