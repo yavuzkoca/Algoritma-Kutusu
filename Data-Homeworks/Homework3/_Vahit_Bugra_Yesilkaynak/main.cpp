@@ -11,5 +11,5 @@ int main(){
 	int number_of_patients = read_patients(&patient_list, PATIENT_INFO_PATH); // Reads from file to create patient_list
 	run_hospital(red, yellow, green, &patient_list, number_of_patients); // Also deletes the patient_list
 
-	return EXIT_SUCCESS;
+	return 0;
 }

@@ -2,23 +2,18 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <cstdlib>
+#include <ctime>
 
 #include "patient_operations.h"
 
 using namespace std;
 
-#include <iostream>
-#include <random>
-
-using namespace std;
-
 int partition(DataType **arr, int beg, int end){
 
-	mt19937 gen;
-	gen.seed(random_device()());
-	uniform_int_distribution<mt19937::result_type> dist(beg, end);
+	srand(time(NULL));
 
-	int pivot_index = dist(gen);
+	int pivot_index = beg + rand() % (end - beg);
 	DataType pivot = (*arr)[pivot_index];
 
 	int lil, big;
