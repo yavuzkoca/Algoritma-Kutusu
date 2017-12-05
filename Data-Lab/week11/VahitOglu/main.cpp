@@ -5,7 +5,7 @@
 
 #include "cell.h"
 
-#define MAZESIZE 30
+#define MAZESIZE 38
 
 #define UP 1
 #define RIGHT 2
