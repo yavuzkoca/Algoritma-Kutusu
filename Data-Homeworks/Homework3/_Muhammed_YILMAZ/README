@@ -1,0 +1,10 @@
+This program is compiled with the following code in GNU/Linux.
+
+g++ hospital.cpp queue.cpp
+
+
+
+----------------------------------------------------
+Bu program GNU/Linux ortamında aşağıdaki kod ile derlenir.
+
+g++ hospital.cpp queue.cpp

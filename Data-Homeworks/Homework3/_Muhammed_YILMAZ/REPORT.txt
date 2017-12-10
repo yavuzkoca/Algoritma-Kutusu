@@ -1,0 +1,134 @@
+This report is writen Turkish and English.
+Bu rapor Türkçe ve İngilizce olarak yazılmıştır.
+
+
+-------------------------------------ENGLISH REPORT-------------------------------------
+
+!!!IMPORTANT!!! 
+- If at the end of the file the <space>, <tab>, <newline> ... characters
+  the last patient is read twice. So at the end of the input file, be careful not to have
+  any characters.
+- It is thought that the input file is ordered by patients according to the time of arrival
+  in the hospital.
+
+- This report <tab> space is written in 8 units.
+
+
+
+~~~~ How does it process? ~~~~
+
+1) Creating Queues
+- The program creates a queue named "inputQ" for the data read from the file.
+- Creates queues with their own names for each priority. (redQ, yellowQ, greenQ)
+- OutputQ is generated for the output file.
+
+2) Importing data from a file
+- reads the data from the file named "patientsInfo.txt".
+- First reads the header line. No action.
+- Then read patient information and write to inputQ.
+
+3) Time flows, program runs
+- When the time starts to progress, the program starts processing.
+- The program continues until the patient is unfinished.
+- When each time interval passes, the following operations are performed in order.
+  (In the following sections "TIME" will be used for the current time.)
+
+	-- if the patient in inputQ arrives at the hospital at "TIME", the patient is added
+	   to the queue according to priority.
+	-- time passes
+	-- treatment takes place as follows.
+
+		--- if redQ is not empty; (During the "1" time interval;)
+			---- XXXX operations are performed.
+		--- Else if yellowQ is not empty; (During the "2" time interval;)
+			---- XXXX operations are performed.
+		--- Else if greenQ is not empty; (During the "3" time interval;)
+			---- XXXX operations are performed.
+		--- Else
+			---- "No treatment ..." is added to outputQ.
+		XXXX operation
+		{
+			---- If the patient in inputQ arrives at the hospital in "Time",
+			     the patient is added to the queue according to priority.
+			---- The first patient in xxxQ is treated.
+			---- required treatment period 1 time interval is reduced
+			---- TIME increases the time interval.
+			---- patient copied to outputQ.
+			---- If the patient's treatment is over, "3) Time flows, program starts"
+			     step is continued.
+			---- if the treatment duration does not end, patient priority 1 is lowered. 
+			     the patient is added to the queue according to priority.
+		}
+4) The patient names in outputQ are printed on the screen at time intervals (with for loop).
+
+
+@Author
+Muhammed YILMAZ
+150150149
+yilmazmu15@itu.edu.tr
+
+
+-------------------------------------TÜRKÇE RAPOR-------------------------------------
+!!!ÖNEMLİ!!!
+- Eğer dosya sonunda <boşluk> , <tab> , <yeni satır> ... karakterilerinden var ise son
+  hasta iki defa okunur. Bu yüzden input dosyasının sonunda öncelikten sonra
+  hiç bir karakter olmamasına dikkat ediniz.
+- İnput dosyasınının, hastaların hastaneye geliş zamanına göre sıralı olarak verildiği
+  düşünülmüştür.
+
+- Bu rapor <tab> boşluğu 8 birim şeklinde yazılmıştır.
+
+
+
+~~~~ Nasıl çalışır? ~~~~~
+
+1) Queue'ları oluşturma
+- Program dosyadan okunan veriler için "inputQ" adında bir queue oluşturur.
+- Her öncelik için kendi isimlerinde queue'lar  oluşturur. (redQ, yellowQ, greenQ)
+- Çıktı dosyası için "outputQ" olulturulur.
+
+2) Dosyadan verileri alma
+- "patientsInfo.txt" isimli dosyadan verileri okur.
+- Öncelikle başlık satırını okur. İşlem yapmaz.
+- Ardından hasta bilgilerini okur ve inputQ'ya yazar.
+
+3) Zaman akar, program çalışır
+- Zaman ilerlemeye başlayınca program da işlemeye başlar.
+- Tedavisi bitmemiş hasta kalana kadar program devam eder.
+- Her 1 zaman aralığı geçerken sırasıyla aşağıdaki işlemler gerçekleşir. 
+  (Bundan sonraki kısımlarda şimdiki zaman için "TIME" kullanılacaktır.)
+
+	-- inputQ içerisindeki hasta hastaneye "TIME"da geldiyse, hasta önceliğine göre
+	   ilgili queue'ya eklenir.
+	-- zaman ilerler
+	-- tedavi işlemi aşağıdaki şekilde gerçekleşir.
+
+		--- if redQ boş değilse;		("1" zaman aralığı boyunca;)
+			---- XXXX işlemleri yapılır.
+		--- Else if yellowQ boş değilse;	("2" zaman aralığı boyunca;)
+			---- XXXX işlemleri yapılır.
+		--- Else if greenQ boş değilse;	("3" zaman aralığı boyunca;)
+			---- XXXX işlemleri yapılır.
+		--- Else
+			---- outputQ'ya "No treatment..." eklenir.
+		XXXX işlemi
+		{
+			---- inputQ içerisindeki hasta hastaneye "Time"da geldiyse, hasta
+			     önceliğine göre ilgili queue'ya eklenir.
+			---- xxxQ'daki ilk hasta tedavi edilir.
+			---- gereken tedavi süreli 1 zaman aralığı azalır
+			---- TIME bir zaman aralığı artar.
+			---- hasta outputQ'ya kopyalanır.
+			---- Eğer hastanın tedavisi bittiyse "3) Zaman akar, program çalışır"
+			     adımından devam edilir.
+			---- tedavi süresi bitmezse hasta önceliği 1 düşürülür. 1 alt öncelik
+			     queue'sunun sonuna eklenir.
+		}
+
+4) outputQ içerisindeki hasta isimleri zaman aralıklarıyla (for içinde) ekrana yazdırılır.
+
+
+@Hazırlayan
+Muhammed YILMAZ
+150150149
+yilmazmu15@itu.edu.tr

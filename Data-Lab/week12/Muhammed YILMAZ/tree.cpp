@@ -21,7 +21,7 @@ queue yaprakDizi;
 node *root = NULL;
 
 void createTree();
-node *addNode(node *agac, int deger, int depth);
+node *addNode(node *agac, int deger);
 void removeTree(node *agac);
 void printPreorder(node *agac);
 void printInorder(node *agac);
@@ -64,25 +64,22 @@ void createAnaDizi(int num){
 void createTree(){
 
 	cout << endl;
-	anaDizi.show();
-	root = addNode(root, anaDizi.top().deger, -1);
-	//yaprakDizi.push(anaDizi.top().deger);
-																						cout << "printInorder-> ";	printInorder(root);	cout << endl;
+																						cout << "anaDizi:\t";	anaDizi.show();
+	root = addNode(root, anaDizi.top().deger);
+																						cout << "printInorder:\t";	printInorder(root);	cout << endl;
 	anaDizi.pull();
 																						cout << endl;
 	for (int tempDerinlik = 0; anaDizi.tepeEleman != NULL; ++tempDerinlik)
 	{
-		anaDizi.show();
+																						cout << "anaDizi:\t";	anaDizi.show();
 		for (int tempYaprak = 0; anaDizi.tepeEleman != NULL && tempYaprak < pow(2,tempDerinlik+1); ++tempYaprak)
 		{
 			yaprakDizi.push(anaDizi.top().deger);
 			anaDizi.pull();
 		}
-
-																							cout << "yaprakDizi: ";	yaprakDizi.show();
+																						cout << "yaprakDizi:\t";	yaprakDizi.show();
 		yaprakYerlestir(root);
-																							cout << "printInorder-> ";	printInorder(root);	cout << endl;
-																							cout << "yaprakDizi: ";	yaprakDizi.show();	cout << endl;
+																						cout << "printInorder:\t";	printInorder(root);	cout << endl << endl;	
 	}
 }
 
@@ -92,7 +89,7 @@ bool yaprakYerlestir(node *agac){
 		return false;
 	if(agac->sol == NULL)
 	{
-		agac->sol = addNode(agac->sol, yaprakDizi.top().deger, -1);
+		agac->sol = addNode(agac->sol, yaprakDizi.top().deger);
 		yaprakDizi.pull();
 	}
 	else
@@ -103,7 +100,7 @@ bool yaprakYerlestir(node *agac){
 		return false;
 	if(agac->sag == NULL)
 	{
-		agac->sag = addNode(agac->sag, yaprakDizi.top().deger, -1);
+		agac->sag = addNode(agac->sag, yaprakDizi.top().deger);
 		
 		yaprakDizi.pull();
 		
@@ -114,7 +111,7 @@ bool yaprakYerlestir(node *agac){
 	}
 }
 
-node *addNode(node *agac, int deger, int depth){
+node *addNode(node *agac, int deger){
 
 	if(agac == NULL)
 	{
@@ -122,7 +119,6 @@ node *addNode(node *agac, int deger, int depth){
 		yeni->deger = deger;
 		yeni->sol = NULL;
 		yeni->sag = NULL;
-		yeni->depth = depth;
 		return yeni;
 	}
 	
