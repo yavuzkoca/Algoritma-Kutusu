@@ -1,0 +1,4 @@
+name          arriving time      treatment time    complaint
+Patient1      0                  7                 RED 
+Patient2      2                  3                 RED 
+Patient3      3                  6                 GREEN  
