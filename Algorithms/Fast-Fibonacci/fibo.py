@@ -1,4 +1,5 @@
-# Fonksiyonlar
+# Vahit Bugra Yesilkaynak @2017
+
 import numpy as np
 import math
 from matplotlib import pyplot as plt
@@ -37,4 +38,3 @@ ys = [np.sin(alpha)
 
 plt.plot(xs, ys)  # , 'ro', MarkerSize=2)
 plt.show()
-

@@ -1,3 +1,5 @@
+// Vahit Bugra Yesilkaynak @2017
+
 #include <iostream>
 #include <random>
 
