@@ -1,0 +1,15 @@
+MINIMUM SPANNING TREE
+
+The subset of edges that connects all vertices in the graph, and has minimum total weight.
+
+Kruskal(V,E)
+
+A = empty
+foreach v in V:
+    Make-disjoint-set(v)
+Sort E by weight increasingly
+foreach(v1,v2) in E:
+    if Find(v1) != Find(v2):
+        A = A union {(v1,v2)}
+        Union(v1,v2)
+return A
