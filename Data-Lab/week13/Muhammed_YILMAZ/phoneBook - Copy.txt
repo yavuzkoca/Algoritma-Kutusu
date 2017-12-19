@@ -1,0 +1,17 @@
+ahmet	111
+mehmet	222
+hasan	333
+abdullah	444
+nazim	555
+huseyin	666
+kasim	777
+suleyman	888
+samet	999
+feyzi	000
+abdullah	456
+kasim	789
+feyzi	345
+suleyman	678
+samet	901
+feyzi	234
+mehmet	567

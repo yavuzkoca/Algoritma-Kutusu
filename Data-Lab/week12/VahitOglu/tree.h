@@ -14,7 +14,7 @@ struct Tree{
 	int findNumLeaf();
 	int calculateDepth();
 	int calculateSum();
-	int calculateAverage();
+	double calculateAverage();
 };
 
 void treeCreator(TreeNode * &, int *, int &, const int &);

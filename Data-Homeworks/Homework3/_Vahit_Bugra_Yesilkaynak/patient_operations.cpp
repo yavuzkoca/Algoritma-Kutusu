@@ -171,7 +171,7 @@ void run_hospital(Queue &red, Queue &yellow, Queue &green, Patient **patient_lis
 			--temp.treatment_time; // For every case temp will be treated 1 unit
 			if(temp.treatment_time != 0 && minimum_treatment_checker == 0) temp.complaint = GREEN;
 			// If did not treated fully add the patient to the green queue
-			else if(temp.treatment_time == 0) temp.complaint = GRAY;
+			else if(temp.treatment_time == 0) {temp.complaint = GRAY; minimum_treatment_checker = 0;}
 			// Else the patient is treated
 			cout << time << ".time slice Patient" << temp.id << endl; // Report the situation
 		}
@@ -184,9 +184,10 @@ void run_hospital(Queue &red, Queue &yellow, Queue &green, Patient **patient_lis
 			}
 			else -- minimum_treatment_checker;
 			--temp.treatment_time;
-			if(temp.treatment_time == 0) temp.complaint = GRAY;
+			if(temp.treatment_time == 0) {temp.complaint = GRAY; minimum_treatment_checker = 0;}
 			cout << time << ".time slice Patient" << temp.id << endl;
 		}
+		else cout << time << ".time slice PatientX (no patient)" << endl;
 
 		for(int i = 0; i < number_of_patients; ++i){
 			if( time == (*patient_list)[i].arriving_time ){

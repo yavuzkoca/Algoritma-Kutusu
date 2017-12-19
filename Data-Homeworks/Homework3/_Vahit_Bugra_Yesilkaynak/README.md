@@ -16,3 +16,11 @@ After that if you want to run the program, you should write ->
 ./a.out
 
 to the terminal, while in the same folder.
+
+Input example given below:
+
+name          arriving time      treatment time    complaint
+Patient1      0                  7                 RED
+Patient2      2                  3                 RED
+Patient3      3                  6                 GREEN
+

@@ -58,16 +58,16 @@ int *random_array_generator(int N){
 
 	mt19937 gen;
 	gen.seed(random_device()());
-	uniform_int_distribution<mt19937::result_type> dist(0, N-1);
+	uniform_int_distribution<mt19937::result_type> dist(1, N);
 
 	int *arr = new int[N];
-	for(int i = 1; i <= N; ++i) arr[i-1] = i;
+	for(int i = 0; i < N; ++i) arr[i] = dist(gen);
 
-	for(int i = 0; i < N; ++i){
-		int loc1 = dist(gen);
-		int loc2 = dist(gen);
-		swap(arr[loc1], arr[loc2]);
-	}
+	//for(int i = 0; i < N; ++i){
+	//	int loc1 = dist(gen);
+	//	int loc2 = dist(gen);
+	//	swap(arr[loc1], arr[loc2]);
+	//}
 
 	return arr;
 }
@@ -128,7 +128,7 @@ void removeTree(TreeNode * &node){
 void printPreorder(TreeNode *node){
 
 	if( node != 0 ){
-		cout << node->data << endl;
+		cout << node->data << " ";
 		printPreorder(node->left);
 		printPreorder(node->right);
 	}
@@ -139,7 +139,7 @@ void printInorder(TreeNode *node){
 
 	if( node != 0 ){
 		printPreorder(node->left);
-		cout << node->data << endl;
+		cout << node->data << " ";
 		printPreorder(node->right);
 	}
 
@@ -150,7 +150,7 @@ void printPostorder(TreeNode *node){
 	if( node != 0 ){
 		printPreorder(node->left);
 		printPreorder(node->right);
-		cout << node->data << endl;
+		cout << node->data << " ";
 	}
 
 }
@@ -238,7 +238,7 @@ int Tree::calculateSum(){
 	return sum;
 }
 
-int Tree::calculateAverage(){
+double Tree::calculateAverage(){
 	Queue<TreeNode *> bfs;
 	bfs.create();
 	TreeNode *traverser;
@@ -252,5 +252,5 @@ int Tree::calculateAverage(){
 		if(traverser->right) {bfs.enqueue(traverser->right); number_of_nodes++; }
 	}
 	bfs.close();
-	return sum / number_of_nodes;
+	return sum / (number_of_nodes - 0.0);
 }
