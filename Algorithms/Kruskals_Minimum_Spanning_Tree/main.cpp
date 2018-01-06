@@ -33,18 +33,14 @@ int main(){
 }
 
 int find(int u) {
-    if (u != parent[u])
-        parent[u] = find(parent[u]);
+    if (u != parent[u]) parent[u] = find(parent[u]);
     return parent[u];
 }
 
 void merge(int x, int y) {
     x = find(x), y = find(y);
-    if (rnk[x] > rnk[y])
-        parent[y] = x;
-    else
-        parent[x] = y;
+    if (rnk[x] > rnk[y]) parent[y] = x;
+    else parent[x] = y;
 
-    if (rnk[x] == rnk[y])
-        rnk[y]++;
+    if (rnk[x] == rnk[y]) rnk[y]++;
 }

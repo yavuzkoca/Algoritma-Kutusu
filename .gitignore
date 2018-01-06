@@ -2,7 +2,20 @@
 **.zip
 **/*.zip
 
+# dont add executable files
 *.out
 **.out
 **/*.out
+*.exe
+**.exe
+**/*.exe
+
+# these are for CLion Users
 deneme/
+CMakeLists.txt
+cmake-build-debug
+main.cpp
+.idea/
+*.DS_Store
+**.DS_Store
+**/*.DS_Store
