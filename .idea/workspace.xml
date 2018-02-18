@@ -3,6 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="Algoritma_Kutusu" targetName="deneme" />
+      <config projectName="Algoritma_Kutusu" targetName="job_sequencing_problem" />
+      <config projectName="Algoritma_Kutusu" targetName="binary_search" />
       <config projectName="Algoritma_Kutusu" targetName="main" />
       <config projectName="Algoritma_Kutusu" targetName="Algoritma_Kutusu" />
       <config projectName="Algoritma_Kutusu" targetName="bst_main" />
@@ -16,16 +18,520 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53723e98-2f04-45db-9592-e7738c02ccdd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Algorithms/Djikstra's_shortest_path/input" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/bst_main.cpp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/BLG 233.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/Print.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/Print.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/Prog.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/Search.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/Search.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/Word.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example01/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example01/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example02/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example02/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example03/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example03/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/lastVersionPuzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/File.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/File.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/foundWordsInfo.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/puzzle.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/searchedWord.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/searchedwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/My Input-Output/emailList.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/dataset_wOutTurkishChars.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/dataset_wOutTurkishChars.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/newStudentsList.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/newStudentsList.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Ali Tolga/fileoperations.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Ali Tolga/fileoperations.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Ali Tolga/phone_prog.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Ali Tolga/record.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Muhammed YILMAZ/fileoperations.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Muhammed YILMAZ/fileoperations.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Muhammed YILMAZ/phone_prog.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Muhammed YILMAZ/record.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Yavuz Koca/Functions.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Yavuz Koca/Functions.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Yavuz Koca/Queue.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Yavuz Koca/Queue.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Yavuz Koca/Stack.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Yavuz Koca/Stack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/Yavuz Koca/Tree.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/Yavuz Koca/Tree.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Yavuz Koca/Tree.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Yavuz Koca/Tree.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/AhmedYasinKUL/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/AhmedYasinKUL/stopwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/Muhammed_YILMAZ/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/Muhammed_YILMAZ/stopwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/VahitOglu/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/VahitOglu/stopwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/_Yavuz_Koca/input.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/_Yavuz_Koca/stopwords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Data Labı 2.vcxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Data Labı 2.vcxproj.filters" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/Data Lab 2.lastbuildstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/Data Labı 2.lastbuildstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Lab2.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Muhammed YILMAZ/Source.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Muhammed YILMAZ/sudoku1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Muhammed YILMAZ/sudoku2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Muhammed YILMAZ/sudoku3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/sudoku1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/sudoku2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/sudoku3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Linked List/List.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Linked List/List.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Yavuz/diziislemleri.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Yavuz/diziislemleri.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Yavuz/kayit.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Yavuz/tel_prog.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/bugra/diziislemleri.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/bugra/diziislemleri.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/bugra/kayit.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/bugra/kayitlar.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/bugra/tel_prog.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/YeniLab3.lastbuildstate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Prog.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/YeniLab3.vcxproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/YeniLab3.vcxproj.filters" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/record.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/record.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/Yavuz/Functions.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/Yavuz/Functions.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/Yavuz/List.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/Yavuz/List.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/Yavuz/Functions.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/Yavuz/Functions.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/Yavuz/List.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/Yavuz/List.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/dataset_wOutTurkishChars.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Ali Tolga/Stack.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Ali Tolga/Stack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Gizem/gizeminkodu.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Yavuz/Stack.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Yavuz/Stack.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Yavuz Koca/Player.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Yavuz Koca/Player.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/BST/BST.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/Linked-List/List.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/Linked-List/List.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Algorithms/Graph-Creator/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/Print.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/Print.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/Prog.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/Search.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/Search.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/Word.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/foundWordsInfo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/lastVersionPuzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Ali Tolga Dinçer/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example01/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example01/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example02/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example02/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example03/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example03/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/File.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/File.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/puzzle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/searchedWord.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/searchedwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/Example Input-Output/dataset_wOutTurkishCharsMy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/My Input-Output/emailList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/My Input-Output/newStudentsList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/dataset_wOutTurkishChars.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/newStudentsList.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Ezgi_Alcicek/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/fileoperations.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/fileoperations.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/phone_prog.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/record.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Muhammed YILMAZ/fileoperations.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Muhammed YILMAZ/fileoperations.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Muhammed YILMAZ/phone_prog.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Muhammed YILMAZ/record.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/Functions.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/Functions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/Queue.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/Queue.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/Stack.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/Stack.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/VahitOglu/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/VahitOglu/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/Yavuz Koca/Tree.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/Yavuz Koca/Tree.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Ahmed Yasin KUL/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Yavuz Koca/Tree.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Yavuz Koca/Tree.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/_Gizem_Ece_Avsar/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/_Vahit_Bugra_Yesilkaynak/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/AhmedYasinKUL/input.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/AhmedYasinKUL/stopwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/Gizem/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/Muhammed_YILMAZ/input.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/Muhammed_YILMAZ/stopwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/VahitOglu/input.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/VahitOglu/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/VahitOglu/stopwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/_Yavuz_Koca/input.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/_Yavuz_Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/_Yavuz_Koca/stopwords.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Data Labı 2.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Data Labı 2.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/Data Lab 2.lastbuildstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/Data Labı 2.lastbuildstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Lab2.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Lab2.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/sudoku1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/sudoku2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/sudoku3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Muhammed YILMAZ/Source.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Yavuz/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/sudoku1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/sudoku2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/sudoku3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Linked List/List.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Linked List/List.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Linked List/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Yavuz/diziislemleri.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Yavuz/diziislemleri.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Yavuz/kayit.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Yavuz/tel_prog.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/bugra/diziislemleri.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/bugra/diziislemleri.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/bugra/kayit.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/bugra/kayitlar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/bugra/tel_prog.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/YeniLab3.lastbuildstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Prog.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/YeniLab3.vcxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/YeniLab3.vcxproj.filters" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/record.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/record.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/bugra/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Muhammed YILMAZ/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Yavuz/Functions.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Yavuz/Functions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Yavuz/List.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Yavuz/List.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Yavuz/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Yavuz/Functions.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Yavuz/Functions.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Yavuz/List.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Yavuz/List.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Yavuz/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/dataset_wOutTurkishChars.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Ali Tolga/Stack.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Ali Tolga/Stack.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Ali Tolga/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Gizem/gizeminkodu.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Yavuz/Stack.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Yavuz/Stack.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Yavuz/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Muhammed YILMAZ/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Yavuz Koca/Player.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Yavuz Koca/Player.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Yavuz Koca/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/bugra/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Linked-List/List.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Linked-List/List.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Linked-List/main.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Small-Vector/main.cpp" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Breadth-First-Search/breadth_first_search.cpp" afterPath="$PROJECT_DIR$/Algorithms/Breadth_First_Search/breadth_first_search.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Fast-Fibonacci/fibo.py" afterPath="$PROJECT_DIR$/Algorithms/Fast_Fibonacci/fibo.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Game-of-Life/README.md" afterPath="$PROJECT_DIR$/Algorithms/Game_of_Life/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Game-of-Life/game_of_life.py" afterPath="$PROJECT_DIR$/Algorithms/Game_of_Life/game_of_life.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Graph-Creator/GraphCreator.cpp" afterPath="$PROJECT_DIR$/Algorithms/Graph_Creator/GraphCreator.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Graph-Creator/GraphCreator.h" afterPath="$PROJECT_DIR$/Algorithms/Graph_Creator/GraphCreator.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/600.png" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/600.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/annun.jpg" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/annun.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/berlin.jpg" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/berlin.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/eiffel.jpg" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/eiffel.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/van.jpg" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/van.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/style_transfer.ipynb" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/style_transfer.ipynb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/vgg19_weights.h5" afterPath="$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/vgg19_weights.h5" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/BeniOku.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/BeniOku.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example01/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example01/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example01/foundWordsInfoEx1.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example01/foundWordsInfoEx1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example01/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example01/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example01/lastVersionPuzzleEx1.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example01/lastVersionPuzzleEx1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example02/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example02/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example02/foundWordsInfoEx02.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example02/foundWordsInfoEx02.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example02/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example02/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example02/lastVersionPuzzleEx02.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example02/lastVersionPuzzleEx02.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example03/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example03/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example03/foundWordsInfoEx03.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example03/foundWordsInfoEx03.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example03/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example03/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example03/lastVersionPuzzleEx03.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example03/lastVersionPuzzleEx03.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/1-Kontrol" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/1-Kontrol" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/foundWordsInfoEx04.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/foundWordsInfoEx04.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example04/lastVersionPuzzleEx04.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example04/lastVersionPuzzleEx04.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/1-Kontrol.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/1-Kontrol.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/foundWordsInfoEx05.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/foundWordsInfoEx05.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example05/lastVersionPuzzleEx05.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example05/lastVersionPuzzleEx05.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/1-Kontrol" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/1-Kontrol" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/foundWordsInfoEx06.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/foundWordsInfoEx06.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/Example06/lastVersionPuzzleEx06.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/Example06/lastVersionPuzzleEx06.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/foundWordsInfoExHw.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/foundWordsInfoExHw.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/lastVersionPuzzleExHw.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/lastVersionPuzzleExHw.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Example-Input-Output/toplu-calistirma.sh" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/toplu-calistirma.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Homework-1.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Homework-1.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/homework1.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/homework1.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Example-Input-Output/ExampleHw/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/yapilar.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/yapilar.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/search.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/search.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/search.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/search.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/word.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Vahit Bugra Yesilkaynak/word.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/foundWordsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Ali Tolga Dinçer/foundWordsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Yavuz Koca/lastVersionPuzzle.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Yavuz Koca/lastVersionPuzzle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/Example Input-Output/emailListMy.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/Example Input-Output/emailListMy.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/Homework-2.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/Homework-2.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Ahmed Yasin KUL/a" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Ahmed Yasin KUL/a" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Ahmed Yasin KUL/blg233hw2.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Ahmed Yasin KUL/blg233hw2.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Ahmed Yasin KUL/dataset_wOutTurkishChars.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Ahmed Yasin KUL/dataset_wOutTurkishChars.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Ahmed Yasin KUL/derle.sh" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Ahmed Yasin KUL/derle.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Ahmed Yasin KUL/emailList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Ahmed Yasin KUL/emailList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Ahmed Yasin KUL/newStudentsList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Ahmed Yasin KUL/newStudentsList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/READ_ME.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/READ_ME.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/studentinfo.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/studentinfo.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surname.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surname.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surnamemap.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surnamemap.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surnamemap.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surnamemap.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surnamenode.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Gizem Ece AVŞAR/surnamenode.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/BENIOKU.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/BENIOKU.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/control.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/control.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/control.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/control.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/dataset_wOutTurkishChars.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/Example Input-Output/dataset_wOutTurkishCharsMy.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/emailListTurksigAndEnglishChars.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/emailListTurksigAndEnglishChars.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/emailListWithTurkishChars.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/emailListWithTurkishChars.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/emailListWithoutTurkishChars.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/emailListWithoutTurkishChars.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/list.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/list.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/mailProgram.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/mailProgram.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/newStudentsList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/newStudentsList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/preferences" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/preferences" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/yardimci.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/yardimci.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Muhammed YILMAZ/yardimci.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Muhammed YILMAZ/yardimci.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/emailList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/emailList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/newStudentsList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/My Input-Output/newStudentsList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/surnameMap.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/surnameMap.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/surnameMap.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Vahit Buğra Yeşilkaynak/surnameMap.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/Functions.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/Functions.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/Functions.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/Functions.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/List.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/List.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/List.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/List.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/emailList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/emailList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/newStudentsList.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/newStudentsList.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_Yavuz Koca/newStudentsList2.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_Yavuz Koca/newStudentsList2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework2/_oguz/jesus.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework2/_oguz/jesus.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/01.HW3-2017.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/01.HW3-2017.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Ezgi_Alcicek/HW3-2017.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Ezgi_Alcicek/HW3-2017.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Ezgi_Alcicek/patient.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Ezgi_Alcicek/patient.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Ezgi_Alcicek/patientsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Ezgi_Alcicek/patientsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Ezgi_Alcicek/queue.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Ezgi_Alcicek/queue.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Ezgi_Alcicek/queue.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Ezgi_Alcicek/queue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/READ_ME.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/READ_ME.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/Report.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/Report.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/bunusil.md" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/bunusil.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/hospital.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/hospital.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/patientsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Gizem_Ece_Avsar/patientsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/README" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/README" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/REPORT.odt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/REPORT.odt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/REPORT.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/REPORT.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/REPORT.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/REPORT.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/hospital.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/hospital.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/patientsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/patientsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/patientsInfo2.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/patientsInfo2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/queue.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/queue.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Muhammed_YILMAZ/queue.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Muhammed_YILMAZ/queue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/README.md" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/REPORT.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/REPORT.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patient.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patient.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patient_operations.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patient_operations.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patient_operations.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patient_operations.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patientsInfo.txt" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/patientsInfo.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/queue.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/queue.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/queue.h" afterPath="$PROJECT_DIR$/Data_Structures/Homeworks/Homework3/_Vahit_Bugra_Yesilkaynak/queue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/teldefteri.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Ali Tolga/teldefteri.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week1/Muhammed YILMAZ/teldefteri.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week1/Muhammed YILMAZ/teldefteri.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/AhmedYasinKUL/Lab8_W10.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/AhmedYasinKUL/Lab8_W10.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/AhmedYasinKUL/a" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/AhmedYasinKUL/a" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/car.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Muhammed YILMAZ/car.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/lab8.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Muhammed YILMAZ/lab8.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/park.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Muhammed YILMAZ/park.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/park.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Muhammed YILMAZ/park.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/tempArea.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Muhammed YILMAZ/tempArea.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/Muhammed YILMAZ/tempArea.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/Muhammed YILMAZ/tempArea.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/a.out.dSYM/Contents/Info.plist" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/a.out.dSYM/Contents/Info.plist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/parkingplace.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/parkingplace.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/parkingplace.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/parkingplace.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/queue.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/queue.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/queue.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/queue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/stack.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/stack.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week10/bugra/stack.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week10/bugra/stack.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/func.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/func.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/func.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/func.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/lab9.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/lab9.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/stack.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/stack.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/stack.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/stack.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/yapilar.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/Oğut TOPÇU - Muhammed YILMAZ/yapilar.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week11/VahitOglu/cell.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week11/VahitOglu/cell.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/Muhammed YILMAZ/queue.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/Muhammed YILMAZ/queue.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/Muhammed YILMAZ/queue.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/Muhammed YILMAZ/queue.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/Muhammed YILMAZ/tree.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/Muhammed YILMAZ/tree.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/VahitOglu/tree.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/VahitOglu/tree.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/VahitOglu/tree.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/VahitOglu/tree.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/oguz/Header.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/oguz/Header.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/oguz/Source.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/oguz/Source.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/oguz/Source1.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/oguz/Source1.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week12/week12-lab10.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week12/week12-lab10.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/01.lab11.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/01.lab11.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Ahmed Yasin KUL/derle.sh" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Ahmed Yasin KUL/derle.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/bst.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/bst.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/bst.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/bst.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/node.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/node.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/node.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/node.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/phoneBook - Copy.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/phoneBook - Copy.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/phoneBook.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/phoneBook.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/_Vahit_Bugra_Yesilkaynak/structures.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/_Vahit_Bugra_Yesilkaynak/structures.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/_Vahit_Bugra_Yesilkaynak/structures.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/_Vahit_Bugra_Yesilkaynak/structures.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/oguz/phonetree.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/oguz/phonetree.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/oguz/prog.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/oguz/prog.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week13/oguz/tree.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week13/oguz/tree.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/AhmedYasinKUL/derle.sh" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/AhmedYasinKUL/derle.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/AhmedYasinKUL/lab12short.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/AhmedYasinKUL/lab12short.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/AhmedYasinKUL/valgrind.sh" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/AhmedYasinKUL/valgrind.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/Muhammed_YILMAZ/lab12.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/Muhammed_YILMAZ/lab12.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/VahitOglu/a.out.dSYM/Contents/Info.plist" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/VahitOglu/a.out.dSYM/Contents/Info.plist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week14/lab12.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week14/lab12.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/BLG 233E_lab1.5.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/BLG 233E_lab1.5.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Bugra.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Bugra.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Data Lab 2.rar" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Data Lab 2.rar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/CL.command.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/CL.command.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/CL.read.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/CL.read.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/CL.write.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/CL.write.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/link.command.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/link.command.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/link.read.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/link.read.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/link.write.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Lab 2.tlog/link.write.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/CL.command.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/CL.command.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/CL.read.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/CL.read.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/CL.write.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/CL.write.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/link.command.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/link.command.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/link.read.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/link.read.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/link.write.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Data Labı 2.tlog/link.write.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/Lab2.obj" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/Lab2.obj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/lab2.obj.enc" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/lab2.obj.enc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/vc140.idb" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/vc140.idb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Data Labı 2/Debug/vc140.pdb" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/Debug/vc140.pdb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Muhammed YILMAZ/sudoku1.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/sudoku1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Muhammed YILMAZ/sudoku2.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/sudoku2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Muhammed YILMAZ/sudoku3.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Data Labı 2/sudoku3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week2/Yavuz/Lab-1.5 Codes.rar" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week2/Yavuz/Lab-1.5 Codes.rar" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/BLG 233E_lab2.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/BLG 233E_lab2.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Week_3.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Week_3.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/Yavuz/teldefteri.txt" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/Yavuz/teldefteri.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week3/oguz/diziislemleri.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week3/oguz/diziislemleri.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/Prog.obj" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/Prog.obj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/CL.command.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/CL.command.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/CL.read.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/CL.read.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/CL.write.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/CL.write.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/link.command.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/link.command.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/link.read.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/link.read.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/link.write.1.tlog" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/YeniLab3.tlog/link.write.1.tlog" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/prog.obj.enc" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/prog.obj.enc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/record.obj" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/record.obj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/vc140.idb" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/vc140.idb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/YeniLab3/Debug/vc140.pdb" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/YeniLab3/Debug/vc140.pdb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/bugra/dizi.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/bugra/dizi.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/bugra/dizi.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/bugra/dizi.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/bugra/kayit.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/bugra/kayit.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/bugra/kayit.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/bugra/kayit.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week4/oguz/Source.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week4/oguz/Source.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/Muhammed YILMAZ/yapilar.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/Muhammed YILMAZ/yapilar.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/bugra.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/bugra.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week5/data-lab4.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week5/data-lab4.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/BLG 233E_lab5.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/BLG 233E_lab5.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Muhammed YILMAZ/phone_prog.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/Muhammed YILMAZ/phone_prog.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/Muhammed YILMAZ/yapilar.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/Muhammed YILMAZ/yapilar.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/lab5.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/lab5.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week6/oğuz/Source.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week6/oğuz/Source.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Muhammed YILMAZ/lab6.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Muhammed YILMAZ/lab6.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Muhammed YILMAZ/lab6.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Muhammed YILMAZ/lab6.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week7/Muhammed YILMAZ/lab6.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week7/Muhammed YILMAZ/lab6.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Muhammed YILMAZ/hareket.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Muhammed YILMAZ/hareket.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Muhammed YILMAZ/hareket.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Muhammed YILMAZ/hareket.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Muhammed YILMAZ/stack.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Muhammed YILMAZ/stack.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Muhammed YILMAZ/stack.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Muhammed YILMAZ/stack.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Muhammed YILMAZ/yapilar.h" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Muhammed YILMAZ/yapilar.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/Yemliha.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/Yemliha.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Lab/week9/lab7.pdf" afterPath="$PROJECT_DIR$/Data_Structures/Lab/week9/lab7.pdf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.h" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/BST/BST.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/bst_main.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/BST/bst_main.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Small-Vector/README.md" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/Small-Vector/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Small-Vector/SmallVector.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/Small-Vector/SmallVector.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/Small-Vector/SmallVector.h" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/Small-Vector/SmallVector.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/queue/Muhammed_YILMAZ/node.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/queue/Muhammed_YILMAZ/node.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/queue/Muhammed_YILMAZ/node.h" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/queue/Muhammed_YILMAZ/node.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/queue/Muhammed_YILMAZ/queue.cpp" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/queue/Muhammed_YILMAZ/queue.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data-Structures/Structures-Library/queue/Muhammed_YILMAZ/queue.h" afterPath="$PROJECT_DIR$/Data_Structures/Structures-Library/queue/Muhammed_YILMAZ/queue.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithms/Kruskals_Minimum_Spanning_Tree/main.cpp" afterPath="$PROJECT_DIR$/Algorithms/Kruskals_Minimum_Spanning_Tree/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +546,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BST.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.cpp">
+      <file leaf-file-name="job_sequencing_problem.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Algorithms/Job_Sequencing_Problem/job_sequencing_problem.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="75" column="17" lean-forward="false" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+            <state relative-caret-position="390">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -57,10 +563,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>key</find>
+      <find>NULL</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>num</replace>
+      <replace>nullptr</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -71,12 +579,16 @@
       <list>
         <option value="$PROJECT_DIR$/Algorithms/Kruskals_Minimum_Spanning_Tree/main.cpp" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.cpp" />
-        <option value="$PROJECT_DIR$/deneme/deneme.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/bst_main.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.h" />
+        <option value="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/bst_main.cpp" />
         <option value="$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.cpp" />
+        <option value="$PROJECT_DIR$/deneme/input" />
+        <option value="$PROJECT_DIR$/deneme/deneme.cpp" />
+        <option value="$PROJECT_DIR$/Algorithms/Searching/Binary_search/binary_search.cpp" />
+        <option value="$PROJECT_DIR$/Algorithms/Job_Sequencing_Problem/job_sequencing_problem.cpp" />
+        <option value="$PROJECT_DIR$/Algorithms/Job_Sequencing_Problem/input" />
       </list>
     </option>
   </component>
@@ -87,7 +599,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="398" />
     <option name="y" value="59" />
     <option name="width" value="1253" />
@@ -118,24 +630,6 @@
               <item name="Algoritma_Kutusu" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Algoritma_Kutusu" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Algoritma_Kutusu" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="Algoritma_Kutusu" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-Structures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritma_Kutusu" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="Algoritma_Kutusu" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-Structures" type="462c0819:PsiDirectoryNode" />
-              <item name="Structures-Library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritma_Kutusu" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="Algoritma_Kutusu" type="462c0819:PsiDirectoryNode" />
-              <item name="Data-Structures" type="462c0819:PsiDirectoryNode" />
-              <item name="Structures-Library" type="462c0819:PsiDirectoryNode" />
-              <item name="BST" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -146,9 +640,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="ObjectiveC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\laravel\C++\Algoritma_Kutusu" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\laravel\C++\Algoritma_Kutusu\cmake-build-debug" />
       <recent name="C:\wamp\www\laravel\C++\Algoritma_Kutusu" />
     </key>
   </component>
@@ -164,32 +663,67 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.bst_main">
+  <component name="RunManager" selected="Application.job_sequencing_problem">
     <configuration name="Algoritma_Kutusu" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="Algoritma_Kutusu" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="Algoritma_Kutusu">
       <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&lt; input" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true">
+      <envs />
+    </configuration>
+    <configuration name="binary_search" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="binary_search" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="binary_search">
+      <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="bst_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="bst_main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="bst_main">
       <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="deneme" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="deneme" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="deneme">
       <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="homework1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="homework1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="homework1">
       <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="job_sequencing_problem" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="job_sequencing_problem" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="job_sequencing_problem">
+      <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Algoritma_Kutusu" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Algoritma_Kutusu" RUN_TARGET_NAME="main">
       <envs />
+      <method>
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
-    <list size="6">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.Algoritma_Kutusu" />
-      <item index="2" class="java.lang.String" itemvalue="Application.bst_main" />
-      <item index="3" class="java.lang.String" itemvalue="Application.deneme" />
-      <item index="4" class="java.lang.String" itemvalue="Application.homework1" />
-      <item index="5" class="java.lang.String" itemvalue="Application.main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.binary_search" />
+      <item index="3" class="java.lang.String" itemvalue="Application.bst_main" />
+      <item index="4" class="java.lang.String" itemvalue="Application.deneme" />
+      <item index="5" class="java.lang.String" itemvalue="Application.homework1" />
+      <item index="6" class="java.lang.String" itemvalue="Application.job_sequencing_problem" />
+      <item index="7" class="java.lang.String" itemvalue="Application.main" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -205,29 +739,44 @@
       <workItem from="1515234931027" duration="1712000" />
       <workItem from="1515236793877" duration="41000" />
       <workItem from="1515236848119" duration="142000" />
-      <workItem from="1515237004237" duration="8410000" />
+      <workItem from="1515237004237" duration="13441000" />
+      <workItem from="1515411116706" duration="2163000" />
+      <workItem from="1515612267438" duration="5646000" />
+      <workItem from="1515949562255" duration="4184000" />
+      <workItem from="1516098807014" duration="106000" />
+      <workItem from="1517780758828" duration="588000" />
+      <workItem from="1517942695277" duration="275000" />
+      <workItem from="1518350078609" duration="3871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10305000" />
+    <option name="totallyTimeSpent" value="32169000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34120736" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34007585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2913386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5748032" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25578406" sideWeight="0.49557522" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996207" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42730722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.573957" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21079692" sideWeight="0.49557522" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25578406" sideWeight="0.50442475" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39949432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -244,46 +793,67 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/homework1.cpp">
+    <entry file="file://$PROJECT_DIR$/deneme/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/deneme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/deneme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/deneme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/deneme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Structures-Library/BST/BST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/homework1.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1975">
           <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <marker date="1511379543188" expanded="true" signature="0:93" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="96:214" ph="/.../" />
-            <marker date="1511379543188" expanded="false" signature="225:315" ph="..." />
-            <marker date="1511379543188" expanded="true" signature="785:1344" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="1364:1928" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="1972:2158" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="2177:3440" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="2795:2914" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="3542:4290" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="4292:4419" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="4437:4756" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="4817:7709" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="5268:5571" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="6551:6645" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="6778:7081" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="7772:10612" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="8219:8495" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="9477:9571" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="9704:9980" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="10673:16686" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="11157:11433" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="12490:12584" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="12721:13005" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="14142:14418" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="15481:15575" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="15712:15996" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="16700:16999" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="17001:17085" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="17106:17379" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="17503:18075" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -301,14 +871,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Lab/week1/Ali Tolga/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Lab/week1/Ali Tolga/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/Breadth-First-Search/breadth_first_search.cpp">
+    <entry file="file://$PROJECT_DIR$/Algorithms/Breadth_First_Search/breadth_first_search.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
@@ -336,56 +906,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deneme/deneme.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Homeworks/Homework1/Muhammed YILMAZ/homework1.cpp">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Homeworks/Homework1/Muhammed YILMAZ/homework1.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="718">
           <caret line="79" column="5" lean-forward="false" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <marker date="1511379543188" expanded="true" signature="0:93" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="96:214" ph="/.../" />
-            <marker date="1511379543188" expanded="false" signature="225:315" ph="..." />
-            <marker date="1511379543188" expanded="true" signature="785:1344" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="1364:1928" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="1972:2158" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="2177:3440" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="2795:2914" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="3542:4290" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="4292:4419" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="4437:4756" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="4817:7709" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="5268:5571" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="6551:6645" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="6778:7081" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="7772:10612" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="8219:8495" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="9477:9571" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="9704:9980" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="10673:16686" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="11157:11433" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="12490:12584" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="12721:13005" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="14142:14418" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="15481:15575" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="15712:15996" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="16700:16999" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="17001:17085" ph="/.../" />
-            <marker date="1511379543188" expanded="true" signature="17106:17379" ph="{...}" />
-            <marker date="1511379543188" expanded="true" signature="17503:18075" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -393,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -401,131 +924,112 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <marker date="1514366185505" expanded="false" signature="9:37" ph="..." />
-            <marker date="1514366185505" expanded="true" signature="182:1178" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/vgg19_weights.h5">
+    <entry file="file://$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/vgg19_weights.h5">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1434">
           <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/annun.jpg">
+    <entry file="file://$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/annun.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/berlin.jpg">
+    <entry file="file://$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/berlin.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/images/eiffel.jpg">
+    <entry file="file://$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/images/eiffel.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/Neural-Style-Transfer/style_transfer.ipynb">
+    <entry file="file://$PROJECT_DIR$/Algorithms/Neural_Style_Transfer/style_transfer.ipynb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11643">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Lab/week13/Yavuz Koca/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Lab/week13/Yavuz Koca/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-62">
           <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <marker date="1513233335122" expanded="true" signature="9:110" ph="..." />
-            <marker date="1513233335122" expanded="true" signature="262:638" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="657:1038" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="1062:1399" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="1411:1601" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="1615:1648" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="1663:1837" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="1849:1960" ph="{...}" />
-            <marker date="1513233335122" expanded="true" signature="1975:2003" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Lab/week13/Yavuz Koca/Tree.cpp">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Lab/week13/Yavuz Koca/Tree.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1513199820839" expanded="true" signature="9:73" ph="..." />
-            <marker date="1513199820839" expanded="true" signature="109:129" ph="{...}" />
-            <marker date="1513199820839" expanded="true" signature="168:481" ph="{...}" />
-            <marker date="1513199820839" expanded="false" signature="539:3134" ph="{...}" />
-            <marker date="1513199820839" expanded="false" signature="3166:5650" ph="{...}" />
-            <marker date="1513199820839" expanded="false" signature="5694:5886" ph="{...}" />
-            <marker date="1513199820839" expanded="true" signature="5922:6361" ph="{...}" />
-            <marker date="1513199820839" expanded="true" signature="6404:7005" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Lab/week12/Yavuz Koca/Tree.cpp">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Lab/week12/Yavuz Koca/Tree.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <marker date="1512631037347" expanded="true" signature="9:73" ph="..." />
-            <marker date="1512631037347" expanded="true" signature="109:129" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="169:306" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="347:486" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="525:660" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="720:1024" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="1057:1315" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="1347:1671" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="1703:2031" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="2067:2168" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="2204:2358" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="2397:2508" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="2545:2659" ph="{...}" />
-            <marker date="1512631037347" expanded="true" signature="2706:2744" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Lab/week13/Muhammed_YILMAZ/bst.cpp">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Lab/week13/Muhammed_YILMAZ/bst.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding>
-            <marker date="1513699733457" expanded="true" signature="0:69" ph="/.../" />
-            <marker date="1513699733457" expanded="true" signature="80:144" ph="..." />
-            <marker date="1513699733457" expanded="true" signature="186:220" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="250:998" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="1050:1391" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="1457:1693" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="1735:1822" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="1867:1974" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="2006:2827" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="2855:3330" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="3361:3641" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="3686:4010" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="4075:4447" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="4477:4617" ph="{...}" />
-            <marker date="1513699733457" expanded="true" signature="4618:4999" ph="/.../" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Structures-Library/BST/bst_main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Structures-Library/BST/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data_Structures/Structures-Library/BST/BST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/Searching/Binary_search/binary_search.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/Sorting/Merge-Sort/mergesort.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -533,36 +1037,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/deneme.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deneme/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Structures-Library/BST/bst_main.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <marker date="1515245143269" expanded="true" signature="9:36" ph="..." />
-            <marker date="1515245143269" expanded="true" signature="70:225" ph="{...}" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="13" column="99" lean-forward="true" selection-start-line="13" selection-start-column="99" selection-end-line="13" selection-end-column="99" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.h">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <marker date="1515254989523" expanded="true" signature="73:567" ph="{...}" />
-            <marker date="1515254989523" expanded="true" signature="104:169" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data-Structures/Structures-Library/BST/BST.cpp">
+    <entry file="file://$PROJECT_DIR$/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="75" column="17" lean-forward="false" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        <state relative-caret-position="125">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/Job_Sequencing_Problem/job_sequencing_problem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

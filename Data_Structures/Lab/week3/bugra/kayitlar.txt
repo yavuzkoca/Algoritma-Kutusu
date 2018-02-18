@@ -1,0 +1,7 @@
+baba 222
+bebe 3333
+bilir 222
+cahit 333
+dilara 333
+vahit 777
+zahir 333
