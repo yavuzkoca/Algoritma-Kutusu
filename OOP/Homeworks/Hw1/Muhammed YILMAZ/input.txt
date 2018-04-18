@@ -1,0 +1,9 @@
+idNo	Name	Surname	hasApp	appDate	appSlot	entryClock
+111	Tugba	Esgin	TRUE	03-03-18	8.00-8.30	7.22
+222	Ahmet	Tezmen	TRUE	03-03-18	8.00-8.30	7.59
+555	Talha	Yardimci	TRUE	03-03-18	8.30-9.00	7.45
+103	Berke	Konak	TRUE	04-03-18	8.30-9.00	8.17
+777	Ali	Findik	FALSE	03-03-18	-	8.22
+999	Merve	Egin	FALSE	03-03-18	-	8.13
+101	Deniz	Yolcu	FALSE	03-03-18	-	8.09
+100	Lara	Dincturk	FALSE	04-03-18	-	8.16
