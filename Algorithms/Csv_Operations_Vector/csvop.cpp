@@ -1,7 +1,7 @@
 /* HEADER      : CSV OPERATIONS CLASS - FUNCTIONS
  * AUTHOR      : Muhammed YILMAZ
  * START DATE  : 05.05.2018
- * LAST EDIT   : 05.05.2018
+ * LAST EDIT   : 17.05.2018
  * E-MAIL      : yilmazmu15@gmail.com
  */
 
@@ -11,16 +11,12 @@
 #include <string>
 #include <fstream>
 
-CsvOp::CsvOp(char inCruncher, std::string inFileName): cruncher(inCruncher), fileName(inFileName)
+CsvOp::CsvOp(std::string inFileName, char inCruncher): cruncher(inCruncher), fileName(inFileName)
 {
     read_csv_file();
 }
 
-CsvOp::~CsvOp()
-{
-}
-
-std::vector<std::string> CsvOp::line_to_vector(const std::string line, char seperator)
+std::vector<std::string> CsvOp::line_to_vector(const std::string &line, char seperator)
 {
     std::vector<std::string> output;
     if(!seperator)
@@ -99,12 +95,38 @@ void CsvOp::print_table()
 
 void CsvOp::print_table(std::vector<std::vector<std::__cxx11::string> > table)
 {
-    for(unsigned int i = 0; i < table.size(); i++)
-    {
-        for(unsigned int j = 0; j < table.at(i).size(); j++)
+    for (auto &i : table) {
+        for(unsigned int j = 0; j < i.size(); j++)
         {
-            std::cout << table.at(i).at(j) << "\t";
+            std::cout << i.at(j) << "\t";
         }
         std::cout << std::endl;
     }
+}
+
+bool CsvOp::write_to_file(const std::string &inFileName, const char &inCruncher) {
+    std::ofstream outputFile;
+    outputFile.open(inFileName);
+
+    if(!outputFile.is_open()){
+        std::cout << "File (" << fileName << ") is could not be created." << std::endl;
+        return false;
+    }
+
+    for (int i = 0; i < this->csvTable.size(); ++i) {
+        for (int j = 0; j < this->csvTable[i].size(); ++j) {
+            outputFile << this->csvTable[i][j];
+            if(j != this->csvTable[i].size() - 1)
+                outputFile << inCruncher;
+        }
+        if(i != this->csvTable.size() - 1)
+            outputFile << std::endl;
+    }
+
+    outputFile.close();
+    return true;
+}
+
+bool CsvOp::write_to_file() {
+    return this->write_to_file(this->fileName, this->cruncher);
 }

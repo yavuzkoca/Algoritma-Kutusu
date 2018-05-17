@@ -1,0 +1,33 @@
+"Name", "Team", "Position", "Height(inches)", "Weight(lbs)", "Age"
+"Adam Donachie", "BAL", "Catcher", 74, 180, 22.99
+"Paul Bako", "BAL", "Catcher", 74, 215, 34.69
+"Ramon Hernandez", "BAL", "Catcher", 72, 210, 30.78
+"Eric Hinske", "BOS", "Outfielder", 74, 235, 29.57
+"Coco Crisp", "BOS", "Outfielder", 72, 185, 27.33
+"David Ortiz", "BOS", "Designated Hitter", 76, 230, 31.28
+"Curt Schilling", "BOS", "Starting Pitcher", 77, 235, 40.29
+"Roberto Hernandez", "CLE", "Relief Pitcher", 76, 250, 42.3
+"Joe Borowski", "CLE", "Relief Pitcher", 74, 225, 35.82
+"Matt Miller", "CLE", "Relief Pitcher", 75, 215, 35.27
+"Jason Davis", "CLE", "Relief Pitcher", 78, 210, 26.81
+"Mike Piazza", "OAK", "Catcher", 75, 215, 38.49
+"Jason Kendall", "OAK", "Catcher", 72, 195, 32.68
+"Luis Vizcaino", "NYY", "Relief Pitcher", 71, 184, 32.57
+"Mike Myers", "NYY", "Relief Pitcher", 75, 219, 37.68
+"Mariano Rivera", "NYY", "Relief Pitcher", 74, 170, 37.25
+"Ivan Rodriguez", "DET", "Catcher", 69, 218, 35.25
+"Vance Wilson", "DET", "Catcher", 71, 190, 33.95
+"Sean Casey", "DET", "First Baseman", 76, 225, 32.66
+"Chris Shelton", "DET", "First Baseman", 72, 220, 26.68
+"Sean White", "SEA", "Starting Pitcher", 76, 195, 25.85
+"Horacio Ramirez", "SEA", "Starting Pitcher", 73, 219, 27.27
+"Brian Roberts", "BAL", "Second Baseman", 69, 176, 29.39
+"Miguel Tejada", "BAL", "Shortstop", 69, 209, 30.77
+"Melvin Mora", "BAL", "Third Baseman", 71, 200, 35.07
+"Aubrey Huff", "BAL", "Third Baseman", 76, 231, 30.19
+"Toby Hall", "CWS", "Catcher", 75, 240, 31.36
+"Paul Konerko", "CWS", "First Baseman", 74, 215, 30.99
+"Tadahito Iguchi", "CWS", "Second Baseman", 69, 185, 32.24
+"Orlando Cabrera", "ANA", "Shortstop", 70, 190, 32.33
+"Erick Aybar", "ANA", "Shortstop", 70, 170, 23.13
+"Reggie Willits", "ANA", "Outfielder", 71, 185, 25.75
