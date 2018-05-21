@@ -1,0 +1,10 @@
+17.05.2018
+- Added new functions;
+    bool write_to_file();
+    bool write_to_file(const std::string inFileName, const char inCruncher);
+        * This function write csv table in CsvOp obje to file named inFileName
+        with use cruncher is inCruncher. Return false if file cannot be created.
+
+20.05.2018
+- Minimal improvements
+

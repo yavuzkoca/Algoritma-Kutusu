@@ -1,13 +1,14 @@
 /* HEADER      : CSV OPERATIONS CLASS - HEADER
  * AUTHOR      : Muhammed YILMAZ
  * START DATE  : 05.05.2018
- * LAST EDIT   : 17.05.2018
+ * LAST EDIT   : 20.05.2018
  * E-MAIL      : yilmazmu15@gmail.com
  */
 
 #ifndef CSVOP_H
 #define CSVOP_H
 
+#include <utility>
 #include <vector>
 #include <iostream>
 
@@ -19,7 +20,7 @@ class CsvOp
 public:
     explicit CsvOp(char inCruncher = ';'): cruncher(inCruncher) {}
     explicit CsvOp(std::string inFileName, char inCruncher = ';');
-    CsvOp(std::vector<std::vector<std::string>> inCsvTable, const char inCruncher = ';') : csvTable(inCsvTable), cruncher(inCruncher) {}
+    explicit CsvOp(std::vector<std::vector<std::string>> inCsvTable, const char inCruncher = ';') : csvTable(std::move(inCsvTable)), cruncher(inCruncher) {}
     ~CsvOp() = default;
 
     void sort_by_column(int columnOrder);
