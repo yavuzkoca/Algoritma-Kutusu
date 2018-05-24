@@ -14,7 +14,6 @@
 deneme/
 CMakeLists.txt
 cmake-build-debug
-main.cpp
 .idea/
 *.DS_Store
 **.DS_Store
