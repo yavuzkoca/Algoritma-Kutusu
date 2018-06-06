@@ -9,6 +9,9 @@
 *.exe
 **.exe
 **/*.exe
+*.gch
+**.gch
+**/*.gch
 
 # these are for CLion Users
 deneme/
