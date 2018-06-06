@@ -15,7 +15,8 @@ int main()
     s.push("999");
 
     while(!s.isEmpty()){
-        auto res = s.pop();
+        auto res = s.top();
+        s.pop();
         cout << res << endl;
     }
     return 0; 

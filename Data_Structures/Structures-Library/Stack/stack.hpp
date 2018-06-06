@@ -38,19 +38,28 @@ public:
         }
         size++;
     }
-    T pop(){
-        // You can retrun dumy variable instead of throwing exception,
-        // Or you can write two seperated methods like top and pop in STL.
+
+    void pop(){
         if(head==NULL) {
             throw "Stack empty";
         }
-        auto res = head->data;
         auto new_head = head->next;
         delete head;
         head = new_head;
         size--;
-        return res;
     }
+
+    /*
+     * Returns the top element. Keeps the data
+     */
+    T top(){
+        if(head==NULL) {
+            throw "Stack empty";
+        }
+
+        return head->data;
+    }
+
     bool isEmpty(){ return head==NULL;}
     unsigned int getSize(){return size;} 
 };  
