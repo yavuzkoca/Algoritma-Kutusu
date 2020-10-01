@@ -15,6 +15,10 @@ int binarySearch(int arr[], int l, int r, int x) {
     return -1;
 }
 
+int binarySearch(int arr[], int n, int x) {
+    return binarySearch(arr, 0, n-1, x); 
+}
+
 int main(){
 
 }
